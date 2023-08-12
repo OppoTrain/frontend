@@ -3,6 +3,7 @@ window.addEventListener('scroll', () => {
   
     if (verticalScrollPx > 130) {
         console.log('hi');
+        // document.getElementById('nav-bar').style.border=''
       //document.getElementById('containerone').style.backgroundColor='black';
     } else if(verticalScrollPx <130) {
         document.getElementById('containerone').style.backgroundColor = '#E5E7EB';
