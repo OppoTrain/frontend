@@ -7,13 +7,10 @@ body {
     font-feature-settings: normal;
     box-sizing: border-box;
 }
-/* *{
-    box-sizing: border-box;
-} */
+
 #nav-bar{
     color: #4648AA;
     box-shadow: 0px 20px 50px 20px rgba(0,0,0,.05);
-    /* margin: 0 10%; */
     width: 100%;
     height: 10%;
     top: 0;
@@ -22,8 +19,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color:  rgb(240,240,240);
-
+    background-color: rgb(240,240,240);
 }
 
 #circular-image {
@@ -36,21 +32,35 @@ body {
     margin-left: 120px;
 }
 
+
+
 #links {
     width: 50%;
-    margin-right: 150px;
+    margin-right: 310px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 #links a {
-   
     font-size: x-large;
     color: #4648AA;
 }
 #links a:hover {
     text-decoration: none;
     color: #fff;
+}
+
+#GetStart-btn{
+    background-color: #4648AA;
+    color: #ffffffdc;
+    border: 1px solid #3d3e84;
+    height: 65px;
+    width: 190px;
+    font-family: inherit;
+    font-size: x-large;
+    border-radius: 20px;
+    margin-right: -150px
 }
 
 #conatiner
@@ -64,40 +74,35 @@ body {
     background-color:  rgb(240,240,240);
     border-radius: 20px;
     border: 2px;
-
     height: 100%;
     width : 100%; 
-    /* margin-right :  10%;
-    margin-left  :  10%; */
     margin-top   : 70px;
     margin-bottom: 100px;
-
     padding: 0 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
 }
+
 #section {
     display: block;
     width: 45%;
-    /* margin-left: 40px; */
-    /* width: 70%; */
 }
-.title{
 
+.title{
     margin-top: 30px;
     font-size: 60px;
     margin: 40px 0;
     color:#4648AA;
     font-weight: 999;
-
 }
-#p-{
+
+#paragraph{
     margin-top: -30px;
     font-size:30px ;
     margin:20px 10px;
 }
+
 #btns{
     margin-top: 10px;
 }
@@ -119,34 +124,20 @@ body {
     border-radius: 20;
 }
 
-
-
-
-
-
 #About-us{
     background-color:  rgb(240,240,240);
     border-radius: 20px;
     border: 2px;
-
     height: 100%;
     width : 100%; 
-
     margin-bottom: 100px;
-
     padding: 0 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-
-
-
-
 #Connect-us{
-    /* background-color: rgba(178, 178, 167, 0.22); */
-    /* border-radius: 20px; */
     background-color:  rgb(240,240,240);
     border: 2px;
     height: 150px;
@@ -155,37 +146,15 @@ body {
     margin: 0 auto;
     align-items: center;
     text-align: center;
-/* justify-content: center; */
 } 
 
-
-
-
-
-
-
-  
-
-  
-
-  
-
-#GetStart-btn{
-    background-color: #4648AA;
-    color: #ffffffdc;
-    border: 1px solid #3d3e84;
-    height: 65px;
-    width: 190px;
-    font-family: inherit; 
-    font-size: x-large;
-    border-radius: 20px;
-}
 #GetStart-btn:hover{
     font-weight: 600;
     padding: 0 15px;
     background-color: #fff;
     color: #4648AA;
 } 
+
 #btn{
     border-radius: 20px;
     width: 250px;
@@ -196,6 +165,7 @@ body {
     background-color: #4648AA;
     color: #eeececec;
 }
+
 #btn:hover{
     font-weight: 600;
     padding: 0 15px;
@@ -204,12 +174,9 @@ body {
     border: 1px solid #282961;
 }
 
-
-
 #img1-1 {
     width: 45%;
     max-width: 400x;
-    /* margin-top: 20px; */
     height: 500px;
    margin-top: 2px;
    margin-left: 10px;
@@ -220,6 +187,59 @@ body {
     margin-left: 30px;
     margin-right: 15px; 
 } */
+
+#team-bar {
+    display: flex;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+}
+
+.team-members {
+    display: flex;
+    animation: scrollTeamMembers 30s linear infinite;
+}
+
+.team-member {
+    flex: 0 0 auto;
+    width: 100px;
+    height: 100px;
+    margin: 0px 15px;
+    align-items: center;
+    text-align: center;
+    margin-left: 120px;
+}
+
+.team-member img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #4648AA;
+    box-shadow: 4px 4px 4px #1d1d3a; /* Light shadow */
+}
+
+.team-member img:hover{
+    border: 2px solid rgb(240,240,240);
+    box-shadow: 4px 4px 4px rgb(181, 180, 180); /* Light shadow */
+}
+
+@keyframes scrollTeamMembers {
+    0% {
+        transform: translateX(100%);
+    }
+    50% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
 
 
 
@@ -293,7 +313,7 @@ body {
         margin: 0;
     }
 
-    #p- {
+    #paragraph {
         font-size: medium;
         margin: 10px 0;
     }
