@@ -46,9 +46,19 @@ body {
     font-size: x-large;
     color: #4648AA;
 }
+
 #links a:hover {
+    background-color: #f2e8dc;
+    color: inherit;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 10px;
+    border: 1px solid #ffffffdc;
+    height: 40px;
+    font-size: x-large;
+    text-align: center;
+    width: 120px;
     text-decoration: none;
-    color: #fff;
 }
 
 #GetStart-btn{
@@ -238,11 +248,6 @@ body {
         transform: translateX(-100%);
     }
 }
-
-
-
-
-
 
 #img2-1{
     width: 30px;
