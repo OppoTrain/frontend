@@ -1,0 +1,170 @@
+/* for nav bar only */
+/* i put each thing lonly to be clear */
+@media screen and (max-width: 900px) {
+    
+    #links {
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        background-color: #FDF9F5;
+        box-shadow: 1px 2px 10px #f9e9d9;
+        z-index: 998;
+        text-align: center;
+        height: 150%;
+        margin: 0;
+    }
+
+    #links.open {
+        display: flex;
+        flex-direction: column;
+    }
+    #GetStart-btn{
+        display: none;
+    }
+    #links a {
+        margin: 0;
+        padding: 15px;
+        border-radius: 0;
+        border-bottom: 1px solid #3d3e84;
+        text-decoration: none;
+        color: #4648AA;
+        transition: background-color 0.3s, color 0.3s, border 0.3s;
+    }
+
+    #links a:hover{
+        border-radius: 20px;
+    }
+
+    #links a:last-child {
+        border-bottom: none;
+    }
+
+    #burger-icon {
+        display: block;
+        cursor: pointer;
+        
+    }
+
+    #burger-icon .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        background-color: #4648AA;
+        transition: transform 0.3s, background-color 0.3s;
+    }
+
+    #burger-icon.open .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    #burger-icon.open .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #burger-icon.open .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
+
+
+
+
+
+/* 
+@media (max-width: 1400px) {
+ stay as you 
+} */
+
+@media (max-width: 1200px) {
+    #btns-qr {
+        flex-direction:column;
+        align-items: center;
+    }
+    #About-us{
+        flex-direction: column;
+    }
+    #img1-1{
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+    #Qr{
+        margin-left:0;
+    }
+    
+}
+
+
+@media (max-width: 768px) {
+ 
+    #conatiner{
+        padding: 0 5%;
+        text-align: center;
+        align-items: center;
+    }
+
+    #main-div{
+        flex-direction: column;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        padding: 0;
+    }
+
+    #section {
+        width: 100%;
+        margin: 0;
+    }
+
+    #paragraph {
+        font-size: medium;
+        margin: 10px 0;
+    }
+
+    #btns-qr{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #Qr {
+        margin: 10px 0;
+    }
+
+    #first-img {
+
+        width: 100%;
+        height: auto;
+        /* padding: auto; */
+        padding: 0 15% 0 0 ;
+    }
+
+    #About-us{
+        flex-direction: column;
+        margin-bottom: 50px;
+        padding: 0;
+    }
+
+    #img1-1 {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    #p1-1 {
+        margin: 10px 0;
+    }
+
+    #Connect-us {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    #img2-1 {
+        margin: 5px;
+    }
+
+}
