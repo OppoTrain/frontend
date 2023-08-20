@@ -1,5 +1,3 @@
-/* for nav bar only */
-/* i put each thing lonly to be clear */
 @media screen and (max-width: 900px) {
     
     #links {
@@ -69,15 +67,6 @@
     }
 }
 
-
-
-
-
-/* 
-@media (max-width: 1400px) {
- stay as you 
-} */
-
 @media (max-width: 1200px) {
     #btns-qr {
         flex-direction:column;
@@ -95,12 +84,9 @@
     #Qr{
         margin-left:0;
     }
-    
 }
 
-
 @media (max-width: 768px) {
- 
     #conatiner{
         padding: 0 5%;
         text-align: center;
@@ -137,7 +123,6 @@
 
         width: 100%;
         height: auto;
-        /* padding: auto; */
         padding: 0 15% 0 0 ;
     }
 
@@ -166,5 +151,4 @@
     #img2-1 {
         margin: 5px;
     }
-
 }
