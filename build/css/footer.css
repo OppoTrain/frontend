@@ -3,20 +3,19 @@
     border: 2px;
     height: 150px;
     width: 100%;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-
     margin: 0 auto;
     align-items: center;
-    text-align: center;
-    
+    text-align: center;  
 } 
+
 #tit, #pf{
     margin: 0 0 0 15px;
 }
+
 #img2-1{
     width: 30px;
     height: 30px;
