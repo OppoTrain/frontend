@@ -67,11 +67,9 @@
 }
 
 #GetStart-btn:hover {
+    cursor: pointer;
+
     font-weight: 600;
     background-color: #fff;
     color: #425980;
 }
-
-
-
-
