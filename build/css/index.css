@@ -18,15 +18,25 @@ body {
     padding:0 10% ;
 
 }
+#test{
+  padding-top:  200px;
+  height: fit-content;
+  width: fit-content;
+}
+#overhead{
 
+padding-top:  90px;
+height: fit-content;
+width: fit-content;
+}
 #main-div {
     background-color:  rgb(240,240,240);
     border-radius: 20px;
     border: 2px solid transparent;
     height: 100%;
     width : 100%; 
-    margin-top   : 70px;
-    margin-bottom: 100px;
+    margin-top   : 0;
+    /* margin-bottom: 100px; */
     padding: 0 5%;
     display: flex;
     justify-content: space-between;
