@@ -66,7 +66,10 @@
     #burger-icon.open .bar:nth-child(3) {
         transform: rotate(45deg) translate(-5px, -6px);
     }
+   
 }
+
+
 
 @media (max-width: 1200px) {
     #btns-qr {
