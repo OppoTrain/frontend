@@ -166,12 +166,12 @@ body {
     object-fit: cover;
     border-radius: 50%;
     border: 2px solid #425980;
-    box-shadow: 4px 4px 4px #1d1d3a; /* Light shadow */
+    box-shadow: 4px 4px 4px #1d1d3a; 
 }
 
 .team-member img:hover{
     border: 2px solid rgb(240,240,240);
-    box-shadow: 4px 4px 4px rgb(181, 180, 180); /* Light shadow */
+    box-shadow: 4px 4px 4px rgb(181, 180, 180); 
 }
 
 @keyframes scrollTeamMembers {
