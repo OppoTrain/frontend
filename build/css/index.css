@@ -176,25 +176,27 @@ width: fit-content;
   background-color: rgb(240,240,240);
 }
 .wrapper i {
-    margin: 0px 50px;
-    top: 50%;
-    height: 50px;
-    width: 50px;
-    cursor: pointer;
-    font-size: 1.25rem;
-    position: absolute;
-    color: black;
-    /* text-align: center; */
-    /* line-height: 50px; */
-    background: #fff;
-    border-radius: 50%;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
-    transform: translateY(-50%);
-    /* transition: transform 0.1s linear;*/
+  margin: 0px 50px;
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  color: #282961;
+  text-align: center;
+  line-height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+  transform: translateY(-50%);
 }
 
 .wrapper span{
   font-size: xx-large;
+  font-size: xx-large;
+    margin-left: 25px;
+    margin-top: 19px;
 }
 
 .color-changing-text {
@@ -209,6 +211,10 @@ width: fit-content;
 
 .swiper-pagination {
   position: absolute;
+  display: inline-flex;
+  border: 1px solid;
+  height: 8px;
+  width: 8px;
 }
 
 .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
@@ -250,13 +256,15 @@ width: fit-content;
 #member1{
   justify-content: center;
   display: grid;
+  margin-top: 20px;
   margin-right: 500px;
 }
 
 #member2{
   justify-content: center;
   display: grid;
-  margin-right: 500px;
+  margin-left: 510px;
+  margin-top: -215px;
 }
 
 .wrapper i:active{
@@ -270,7 +278,6 @@ width: fit-content;
 }
 
 #carousel{
-    /* display: flex; */
     background-color: white;
     list-style: none;
     height: 90%;
@@ -298,7 +305,6 @@ width: fit-content;
 }
 #carousel .card {
   scroll-snap-align: start;
-  /* height: 342px; */
   list-style: none;
   background: #fff;
   cursor: pointer;
@@ -311,8 +317,7 @@ width: fit-content;
   height: 148px;
   width: 148px;
   border-radius: 50%;
-  /* margin-right: 57px; */
-  transform: translateY(10%) scale(1.2);
+  transform: translateY(10%) scale(1.2)
 }
 .card .img img {
   width: 140px;
@@ -324,102 +329,9 @@ width: fit-content;
 #carousel .card h2 {
   font-weight: 500;
   font-size: 1.56rem;
-  margin: 30px 0 5px;
+  margin: 30px -36px 5px;
 }
 #carousel .card span {
   color: #6A6D78;
   font-size: 1.31rem;
 }
-
-/* #team-bar {
-    background-color: rgb(240,240,240);
-    border: 2px;
-    height: 460px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    margin: 0 auto;
-    align-items: center;
-    text-align: center;
-    /* gap: 35px; */
-/*}
-
-#members-bar{
-    width: 100%;
-    /* position: relative; 
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}*/
-
-/* .box-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  } */
-  
-  /*.box {
-    text-align: center;
-  }
-  
-  .box img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .prev-arrow,
-  .next-arrow {
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-  }
-  
-#team-members{
-    align-content: flex-start;
-    display: flex;
-    overflow: hidden;
-    position: relative;
-    touch-action: pan-y;
-    user-select: none;
-    width: 100%;
-}
-
-.team-member {
-    flex: 0 0 auto;
-    width: 100px;
-    height: 100px;
-    margin: 0px 15px;
-    align-items: center;
-    text-align: center;
-    margin-left: 120px;
-}
-
-.team-member img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 2px solid #425980;
-    box-shadow: 4px 4px 4px #1d1d3a; 
-}
-
-.team-member img:hover{
-    border: 2px solid rgb(240,240,240);
-    box-shadow: 4px 4px 4px rgb(181, 180, 180); 
-}*/
-
-/*@keyframes scrollTeamMembers {
-    0% {
-        transform: translateX(100%);
-    }
-    50% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-} */

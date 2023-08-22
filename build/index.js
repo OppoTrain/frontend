@@ -19,35 +19,20 @@ document.addEventListener("DOMContentLoaded", () => {
         currentCarousel.style.display = "block"; 
     });
 
+    const spans = document.querySelectorAll(".color-changing-text span");
+    spans.forEach((span, index) => {
+        span.style.animationDelay = `${index * 0.1}s`;
+    });
 
-const spans = document.querySelectorAll(".color-changing-text span");
-spans.forEach((span, index) => {
-    span.style.animationDelay = `${index * 0.1}s`;
-});
-
-});
-
-new Swiper(".wrapper", {
-    slidesPerView: 1.5,
-    centeredSlides: true,
-    spaceBetween: 24,
-    lazyLoading: true,
-    loop: true,
-    keyboard: {
-       enabled: true
-    },
-    navigation: {
-      nextEl: "#right",
-      prevEl: "#left"
-    },
-    pagination: {
-    el: (".wrapper .swiper-custom-pagination"),
-    clickable: true,
-    renderBullet: function(index, className) {
-    return `<div class=${className}>
-    <span class="number">${index + 1}</span>
-    <span class="line"></span>
-    </div>`
-    }
-    }
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            bulletClass: 'swiper-pagination-bullet',
+            bulletActiveClass: 'custom-bullet-active'
+        },
+    });
 });
