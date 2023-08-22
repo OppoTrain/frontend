@@ -29,12 +29,7 @@ padding-top:  90px;
 height: fit-content;
 width: fit-content;
 }
-#overhead2{
 
-  padding-top:  90px;
-  height: fit-content;
-  width: fit-content;
-  }
 #main-div {
     background-color:  rgb(240,240,240);
     border-radius: 20px;
@@ -152,22 +147,29 @@ width: fit-content;
    display: block;
 }
 
+#overhead2{
+
+  padding-top:  90px;
+  height: fit-content;
+  width: fit-content;
+  }
+  
 /* Import Google font - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 .wrapper {
-    width: 80%;
-    margin-left: 150px;
-    position: relative;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-    display: flex;
-    padding: 0 35px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-    border: 2px;
-    min-height: 100vh;
-    background-color: rgb(240,240,240);
+  width: 1216px;
+  margin-left: 150px;
+  position: relative;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  padding: 0 35px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  border: 2px;
+  height: 603px;
+  background-color: rgb(240,240,240);
 }
 .wrapper i {
     margin: 0px 50px;
@@ -195,43 +197,37 @@ width: fit-content;
 .wrapper i:last-child{
   right: -22px;
 }
-.wrapper .carousel{
-    /* display: grid; */
-    display: block;
-    grid-auto-flow: column;
-    grid-auto-columns: calc((100% / 3) - 12px);
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    gap: 16px;
-    /* border-radius: 8px; */
-    /* scroll-behavior: smooth; */
-    width: 650px;
-    scrollbar-width: none;
-    height: 351px;
-    /* margin: 11px 158px; */
-    margin-left: 0px;
-    margin-top: 0px;
+
+#carousel{
+    display: flex;
+    background-color: white;
+    list-style: none;
+    height: 80%;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+
 }
-.carousel::-webkit-scrollbar {
+#carousel::-webkit-scrollbar {
   display: none;
 }
-.carousel.no-transition {
+#carousel.no-transition {
   scroll-behavior: auto;
 }
-.carousel.dragging {
+#carousel.dragging {
   scroll-snap-type: none;
   scroll-behavior: auto;
 }
-.carousel.dragging .card {
+#carousel.dragging .card {
   cursor: grab;
   user-select: none;
 }
-.carousel :where(.card, .img) {
+#carousel :where(.card, .img) {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.carousel .card {
+#carousel .card {
   scroll-snap-align: start;
   height: 342px;
   list-style: none;
@@ -241,7 +237,7 @@ width: fit-content;
   flex-direction: column;
   border-radius: 8px;
 }
-.carousel .card .img {
+#carousel .card .img {
   background: #8B53FF;
   height: 148px;
   width: 148px;
@@ -254,12 +250,12 @@ width: fit-content;
   object-fit: cover;
   border: 4px solid #fff;
 }
-.carousel .card h2 {
+#carousel .card h2 {
   font-weight: 500;
   font-size: 1.56rem;
   margin: 30px 0 5px;
 }
-.carousel .card span {
+#carousel .card span {
   color: #6A6D78;
   font-size: 1.31rem;
 }
