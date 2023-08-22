@@ -114,3 +114,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Rest of your logic...
 });
+
+const spans = document.querySelectorAll(".color-changing-text span");
+
+// Add class to trigger animation
+spans.forEach((span, index) => {
+    span.style.animationDelay = `${index * 0.1}s`;
+});

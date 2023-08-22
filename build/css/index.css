@@ -157,6 +157,7 @@ width: fit-content;
 /* Import Google font - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 .wrapper {
+  flex-direction: column;
   width: 1216px;
   margin-left: 150px;
   position: relative;
@@ -169,6 +170,9 @@ width: fit-content;
   border-radius: 20px;
   border: 2px;
   height: 603px;
+  font-family: 'Poppins';
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJbecmNE.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FF;
   background-color: rgb(240,240,240);
 }
 .wrapper i {
@@ -188,6 +192,52 @@ width: fit-content;
     transform: translateY(-50%);
     /* transition: transform 0.1s linear;*/
 }
+
+.wrapper span{
+  margin-left: 25px;
+  margin-bottom: 20px;
+  font-size: xx-large;
+  width: 228px;
+  display: block;
+}
+
+.color-changing-text {
+  display: inline-block;
+  font-size: 24px;
+}
+
+.color-changing-text span {
+  display: inline-block;
+  animation: colorChange 2s infinite;
+}
+
+@keyframes colorChange {
+  0%, 100% {
+      color: rgb(0, 166, 255);
+  }
+  25% {
+      color: rgb(0, 89, 255);
+  }
+  50% {
+     color: rgb(106, 0, 255);
+  }
+  75% {
+     color: #282961;
+  }
+}
+
+#member1{
+  justify-content: center;
+  display: grid;
+  margin-right: 500px;
+}
+
+#member2{
+  justify-content: center;
+  display: grid;
+  margin-right: 500px;
+}
+
 .wrapper i:active{
   transform: translateY(-50%) scale(0.85);
 }
@@ -199,14 +249,12 @@ width: fit-content;
 }
 
 #carousel{
-    display: flex;
+    /* display: flex; */
     background-color: white;
     list-style: none;
-    height: 80%;
+    height: 90%;
     width: 80%;
-    justify-content: center;
-    align-items: center;
-
+    border-radius: 10px;
 }
 #carousel::-webkit-scrollbar {
   display: none;
@@ -229,7 +277,7 @@ width: fit-content;
 }
 #carousel .card {
   scroll-snap-align: start;
-  height: 342px;
+  /* height: 342px; */
   list-style: none;
   background: #fff;
   cursor: pointer;
@@ -238,10 +286,12 @@ width: fit-content;
   border-radius: 8px;
 }
 #carousel .card .img {
-  background: #8B53FF;
+  background: #282961;
   height: 148px;
   width: 148px;
   border-radius: 50%;
+  /* margin-right: 57px; */
+  transform: translateY(10%) scale(1.2);
 }
 .card .img img {
   width: 140px;
