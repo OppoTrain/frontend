@@ -1,28 +1,13 @@
-// document.addEventListener("DOMContentLoaded", () => {
-//     const wrapper = document.querySelector(".wrapper");
-//     const carousels = document.querySelectorAll(".wrapper ul[id^='carousel']");
-//     const arrowLeft = document.getElementById("left");
-//     const arrowRight = document.getElementById("right");
-    
-//     let currentCarousel = carousels[0];
-
-//     arrowLeft.addEventListener("click", () => {
-//         currentCarousel.style.display = "none"; 
-//         const currentIndex = Array.from(carousels).indexOf(currentCarousel);
-//         currentCarousel = carousels[(currentIndex + 1) % carousels.length];
-//         currentCarousel.style.display = "block"; 
-//     });
-
-//     arrowRight.addEventListener("click", () => {
-//         currentCarousel.style.display = "none"; 
-//         const currentIndex = Array.from(carousels).indexOf(currentCarousel);
-//         currentCarousel = carousels[(currentIndex + 1) % carousels.length];
-//         currentCarousel.style.display = "block"; 
-//     });
-
-
-    
-// });
+document.addEventListener('DOMContentLoaded', () => {
+    const burgerIcon = document.getElementById('burger-icon');
+    const links = document.getElementById('links');
+    const button =document.getElementById('GetStart-btn');
+    burgerIcon.addEventListener('click', () => {
+        burgerIcon.classList.toggle('open');
+        links.classList.toggle('open');
+        button.classList.toggle('open');
+    });
+});
 
 document.addEventListener("DOMContentLoaded", () => {
     const wrapper = document.querySelector(".wrapper");
