@@ -1,4 +1,11 @@
-@media screen and (max-width: 900px) {
+/* for nav bar only */
+@media screen and (  max-width: 900px) {
+    .card{
+        flex-direction: column;
+    }
+    .team-name{
+    }
+
     #links {
         display: none;
         position: absolute;
@@ -18,7 +25,7 @@
         flex-direction: column;
     }
 
-    #GetStart-btn{
+    #join-btn{
         display: none;
     }
 
@@ -69,107 +76,62 @@
    
 }
 
-
-
 @media (max-width: 1200px) {
     #btns-qr {
         flex-direction:column;
         align-items: center;
     }
 
-    #About-us{
-        flex-direction: column;
-    }
-
-    #img1-1{
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        margin: 10px 0;
-    }
-
-    #Qr{
+   #Qr{
         margin-left:0;
     }
 
     #title{
-
-        margin: 40px 0;
+        /* margin: 40px 0; */
     }
 }
 
 @media (max-width: 768px) {
+    /* start of first-section */
     #conatiner{
         padding: 0 5%;
         text-align: center;
         align-items: center;
-    }
 
-    #main-div{
+    }
+    .section{
         flex-direction: column;
-        margin-top: 30px;
-        margin-bottom: 50px;
-        padding: 0;
+        padding: 50px 5%;
     }
-
-    #section {
+    #first-part{
         width: 100%;
-        margin: 0;
+        
     }
-    
-    #p-{
-        font-size:25px ;
-        padding: 0 30px;
-    }
-    
-    #paragraph{
-        margin-top: -30px;
-        padding: 0 30px;
-        font-size:25px ;
-        margin:20px 10px;
-    }
-
     #btns-qr{
         flex-direction: column;
         align-items: center;
     }
-
     #Qr {
         margin: 10px 0;
     }
-
     #first-img {
 
         width: 100%;
         height: auto;
         padding: 0 15% 0 0 ;
-    }
+    } 
+    /* end of first-section */
 
-    #About-us{
-        flex-direction: column;
-        margin-bottom: 50px;
-        padding: 0;
-    }
 
-    #img1-1 {
-        display: none;
-    }
 
-    #p1-1 {
-        margin: 10px 0;
-    }
+    /* start of our-story-section */  
+    
+    /* end of our-story-section */  
 
-    #Connect-us {
-        height: auto;
-        padding: 20px 0;
-    }
 
-    #img2-1 {
-        margin: 5px;
-    }
 
-    #title{
-
-        margin: 40px 0;
-    }
+    /* start of our-team-section */  
+    
+    /* end of our-team-section */ 
+    
 }

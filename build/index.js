@@ -10,8 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-    const wrapper = document.querySelector(".wrapper");
-    const carousels = document.querySelectorAll(".wrapper ul[id^='carousel']");
+    const wrapper = document.querySelector("#our-team-section");
+    const carousels = document.querySelectorAll("#our-team-section ul[class^='carousel']");
     const arrowLeft = document.getElementById("left");
     const arrowRight = document.getElementById("right");
 
