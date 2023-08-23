@@ -11,75 +11,73 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opportarin</title>
+    <!-- enternal links: -->
+    <link rel="shortcut icon" type="image/x-icon" href="imgs/opportrain-logo.png"/>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/responsivity.css">
-    <link rel="shortcut icon" type="image/x-icon" href="imgs/opportrain-logo.png" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>Opportarin</title>
     <script src="index.js"></script>
+    <!-- external links: -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
     <div id="nav-bar">
-        <div id="circular-image"> 
-            <a href="#overhead">
-                <img src="imgs/opportrain-logo.png" alt="LOGO" >
-            </a>
+        <div id="content">
+            <div id="logo"> 
+                <a   href="#first-section-wrap">
+                    <img src="imgs/opportrain-logo.png" alt="LOGO" >
+                </a>
+            </div>
+            <div id="burger-icon" class="closed">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div   id="links" class="closed">
+                <a href="#our-story-section-wrap">Our Story</a>
+                <a href="#overhead2">Our Team</a>
+            </div>
+            <button id="join-btn" class="btn" onclick="window.location.href='https://t.me/Opportrain_Bot';">Join Our Bot</button>
         </div>
-        <div id="burger-icon" class="closed">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-        <div id="links" class="closed">
-            <a href="#test">About Us</a>
-            <a href="#overhead2">Our Team</a>
-        </div>
-        <button id="GetStart-btn" onclick="window.location.href='https://t.me/Opportrain_Bot';">Join Our Bot</button>
-
-    </div> <!--  end of nav-bar -->
+    </div> <!-- end of nav-bar -->
         
-    
-
     <div id="conatiner">
-        <div id="overhead">
-            <div id="main-div" >
-                <div id="section" >
+        <div id="first-section-wrap" class="wrap">
+            <div id="first-section" class="section">
+                <div id="first-part" >
                     <h1 id="title" class="title"> Opportarin Bot  </h1>
-                    <p id="p-"> 
+                    <p class="text"> 
                         We aim to create a culture where students get help in finding the right guidance to get an internship based on their own skills and needs using Conversational AI technology. 
                     </p>
                     <div id="btns-qr">
                         <div id="btns"> 
-                            <button id="btn" > Watch Demo </button>
-                            <button id="btn" onclick="window.location.href='https://t.me/Opportrain_Bot';"> Join Our Bot</button>
+                            <button id="btn1" class="btn" > Watch Demo </button>
+                            <button id="btn2" class="btn" onclick="window.location.href='https://t.me/Opportrain_Bot';"> Join Our Bot</button>
                         </div> 
                         <img alt="QR" id="Qr" src="imgs/Qr.png">
                     </div>
                 </div>
-                <img id ="first-img" src="imgs/img.png">
+                <img id ="second-part" src="imgs/img.png">
             </div>
-     </div>
-
-        <div id="test">
-            <div id="About-us">
-                    <div id="p1-1">
-                            <p id="paragraph">I am from Palestine. At work, I had an opportunity to train university students. 
-                                In 2023, I trained 5 engineers from various backgrounds and they discussed the same local student’s
-                                problem in<b> struggling in finding fit internships</b>. In our quest to assist students in their career journeys,
-                                we aim to create a chatbot community. By leveraging technology, we hope to bridge the gap between students and 
-                                suitable internships. Our goal is to equip students with the essential skills and sources required to secure 
-                                these opportunities. 
-                            </p>
-                    </div>
-
+        </div> <!-- end of our-story-section -->
+        <div id="our-story-section-wrap" class="wrap">
+            <div id="our-story-section"  class="section">
+                <p class="text">I am from Palestine. At work, I had an opportunity to train university students. 
+                    In 2023, I trained 5 engineers from various backgrounds and they discussed the same local student’s
+                    problem in<b> struggling in finding fit internships</b>. In our quest to assist students in their career journeys,
+                    we aim to create a chatbot community. By leveraging technology, we hope to bridge the gap between students and 
+                    suitable internships. Our goal is to equip students with the essential skills and sources required to secure 
+                    these opportunities. 
+                </p>
             </div>
-      
-        </div>
-    </div> 
-  
+        </div> <!-- end of our-story-section -->
+    </div> <!--  end of container -->
+
+
+
     <div id="overhead2">
     <div class="wrapper">
         <i id="left" class="fa-solid fa-angle-left"></i>
@@ -111,8 +109,7 @@
   </ul>
       <i id="right" class="fa-solid fa-angle-right">   </i>
     </div>
-</div>
-
+    </div>
 
     <footer id= "footer" >
         <h1 id="tit"style="font-weight: bold;"><span style="color:black;"> 
@@ -127,7 +124,7 @@
         <div >
           <p id="pf"> ©2023 Oporrtrian Inc </p>
         </div> 
-    </footer>
+    </footer><!-- end of footer -->
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
