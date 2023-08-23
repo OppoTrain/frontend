@@ -1,33 +1,60 @@
+// document.addEventListener("DOMContentLoaded", () => {
+//     const wrapper = document.querySelector(".wrapper");
+//     const carousels = document.querySelectorAll(".wrapper ul[id^='carousel']");
+//     const arrowLeft = document.getElementById("left");
+//     const arrowRight = document.getElementById("right");
+    
+//     let currentCarousel = carousels[0];
+
+//     arrowLeft.addEventListener("click", () => {
+//         currentCarousel.style.display = "none"; 
+//         const currentIndex = Array.from(carousels).indexOf(currentCarousel);
+//         currentCarousel = carousels[(currentIndex + 1) % carousels.length];
+//         currentCarousel.style.display = "block"; 
+//     });
+
+//     arrowRight.addEventListener("click", () => {
+//         currentCarousel.style.display = "none"; 
+//         const currentIndex = Array.from(carousels).indexOf(currentCarousel);
+//         currentCarousel = carousels[(currentIndex + 1) % carousels.length];
+//         currentCarousel.style.display = "block"; 
+//     });
+
+
+    
+// });
+
 document.addEventListener("DOMContentLoaded", () => {
     const wrapper = document.querySelector(".wrapper");
-    const carousel1 = document.querySelector(".carousel1");
-    const carousel2 = document.querySelector(".carousel2");
+    const carousels = document.querySelectorAll(".wrapper ul[id^='carousel']");
     const arrowLeft = document.getElementById("left");
     const arrowRight = document.getElementById("right");
-    
-    let currentCarousel = carousel1;
+
+    let currentCarousel = carousels[0];
 
     arrowLeft.addEventListener("click", () => {
         currentCarousel.style.display = "none"; 
-        currentCarousel = currentCarousel === carousel1 ? carousel2 : carousel1; 
+        const currentIndex = Array.from(carousels).indexOf(currentCarousel);
+        currentCarousel = carousels[(currentIndex + 1) % carousels.length];
         currentCarousel.style.display = "block"; 
     });
 
     arrowRight.addEventListener("click", () => {
         currentCarousel.style.display = "none"; 
-        currentCarousel = currentCarousel === carousel1 ? carousel2 : carousel1;
+        const currentIndex = Array.from(carousels).indexOf(currentCarousel);
+        currentCarousel = carousels[(currentIndex + 1) % carousels.length];
         currentCarousel.style.display = "block"; 
     });
 
-    const spans = document.querySelectorAll(".color-changing-text span");
-    spans.forEach((span, index) => {
-        span.style.animationDelay = `${index * 0.1}s`;
-    });
-
+    // Initialize Swiper with desired transition effect
     var swiper = new Swiper('.swiper-container', {
         slidesPerView: 1,
         spaceBetween: 30,
         loop: true,
+        effect: 'flip',
+        flipEffect: {
+            slideShadows: false, // Set to true for slide shadows
+        },
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
