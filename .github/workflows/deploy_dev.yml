@@ -14,5 +14,5 @@ jobs:
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
           firebaseServiceAccount: "${{ secrets.DEV_FIREBASE_SERVICE_ACCOUNT }}"
-          projectId: opportrain
+          projectId: dev-opportrain
           channelId: live
