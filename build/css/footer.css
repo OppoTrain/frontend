@@ -11,6 +11,8 @@
     align-items: center;
     text-align: center;  
     margin-top: 102px;
+    position: relative;
+    bottom: 0;
 } 
 
 #tit, #pf{

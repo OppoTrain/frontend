@@ -20,9 +20,10 @@ document.addEventListener("DOMContentLoaded", () => {
     arrowLeft.addEventListener("click", () => {
         currentCarousel.style.display = "none"; 
         const currentIndex = Array.from(carousels).indexOf(currentCarousel);
-        currentCarousel = carousels[(currentIndex + 1) % carousels.length];
+        const prevIndex = (currentIndex - 1 + carousels.length) % carousels.length;
+        currentCarousel = carousels[prevIndex];
         currentCarousel.style.display = "block"; 
-    });
+      });
 
     arrowRight.addEventListener("click", () => {
         currentCarousel.style.display = "none"; 
