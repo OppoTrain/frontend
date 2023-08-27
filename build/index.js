@@ -10,8 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-    const wrapper = document.querySelector(".wrapper");
-    const carousels = document.querySelectorAll(".wrapper ul[id^='carousel']");
+    const wrapper = document.querySelector("#our-team-section");
+    const carousels = document.querySelectorAll("#our-team-section ul[class^='carousel']");
     const arrowLeft = document.getElementById("left");
     const arrowRight = document.getElementById("right");
 
@@ -20,9 +20,10 @@ document.addEventListener("DOMContentLoaded", () => {
     arrowLeft.addEventListener("click", () => {
         currentCarousel.style.display = "none"; 
         const currentIndex = Array.from(carousels).indexOf(currentCarousel);
-        currentCarousel = carousels[(currentIndex + 1) % carousels.length];
+        const prevIndex = (currentIndex - 1 + carousels.length) % carousels.length;
+        currentCarousel = carousels[prevIndex];
         currentCarousel.style.display = "block"; 
-    });
+      });
 
     arrowRight.addEventListener("click", () => {
         currentCarousel.style.display = "none"; 

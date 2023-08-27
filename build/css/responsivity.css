@@ -1,5 +1,5 @@
 /* for nav bar only */
-@media screen and (  max-width: 900px) {
+@media screen and (  max-width: 920px) {
     #links {
         display: none;
         position: absolute;
@@ -83,8 +83,123 @@
     #title{
         /* margin: 40px 0; */
     }
+    #first-section{
+        padding-top: 100px ;
+        }
 }
 
+/* @media screen and (  max-width: 920px) {
+    #our-team-section{
+        height: 800px;
+    }
+     
+    #carousel2 {
+        height: 800px;
+        
+    }
+    #carousel4{
+        height: 800px;
+    }
+    
+
+    .card{
+        flex-direction: column;
+        height: 600px;
+        /* height: fit-content; 
+        
+    }
+} */
+
+@media screen and (max-width: 768px) {
+    /* Adjustments for screens with a maximum width of 768px */
+  
+    /* Center everything in the carousel */
+    #left{
+        z-index: 1;
+    }
+    .carousel {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    /* Adjust margins and spacing */
+    .carousel .team-name {
+  
+      font-size: 30px; /* Adjust font size if necessary */
+    }
+  
+    .carousel .card {
+      height: auto;
+      margin: 20px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .carousel .card .img {
+      height: 120px;
+      width: 120px;
+      border-radius: 50%;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: linear-gradient(#282961e3, #808087);
+    }
+    #carousel3{
+        top: 100px;
+        position: relative;
+        top: 53px;
+    }
+    
+    #carousel1{
+        position: relative;
+        top: 53px;
+ 
+    }
+  
+  
+    .carousel .card .img img {
+      width: 112px;
+      height: 112px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #fff;
+    }
+  
+    .carousel .card h2 {
+      font-size: 1.5rem;
+      margin-top: 30px ;
+      display: flex;
+      align-items: center;
+    }
+  
+    .carousel .card span {
+      font-size: 1rem;
+    }
+  
+    /* Keep arrows in their positions */
+  
+    /* Adjust span size */
+    #our-team-section span {
+      font-size: large;
+      margin-left: 15px;
+      margin-top: 10px;
+    }
+  
+    /* Center member sections */
+    #member1, #member2, #one-member {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+}
+  
+  
 @media (max-width: 768px) {
     /* start of first-section */
     #conatiner{
@@ -97,6 +212,9 @@
         flex-direction: column;
         padding: 50px 5%;
     }
+    #first-section{
+        padding-top: 50px ;
+        }
     #first-part{
         width: 100%;
         
@@ -114,6 +232,11 @@
         height: auto;
         padding: 0 15% 0 0 ;
     } 
+    #second-part{
+       
+        position:relative;
+         left: -40px;
+    }
     /* end of first-section */
 
 

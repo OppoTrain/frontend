@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 *{
     font-family: "Inter" , sans-serif;
     font-feature-settings: normal;
@@ -62,7 +63,7 @@ body {
 
 /* start of first section */
 #first-section{
-
+padding-top: 50px ;
 }
 #first-part{
   width: 45%;
@@ -80,6 +81,7 @@ body {
   display: flex; 
   flex-direction:row;
   align-items: center;
+  margin-top: 30px;
  }
 #btns{
   margin-top: 10px;
@@ -94,8 +96,11 @@ margin-bottom: 15px;
 }
 #second-part{
     width: 45%;
-    height:600px;
-    border-radius: 20;
+    height: 100%;
+        min-width: 290px;
+    min-height: 520px; 
+    position:relative;
+     left: 0;
 }
 /* end of first section */
 
@@ -108,42 +113,6 @@ margin-bottom: 15px;
 }
 /* end of our-story section */
 
-
-
-
-
-
-
-#About-us{
-    background-color:  rgb(240,240,240);
-    border-radius: 20px;
-    border: 2px;
-    height: 100%;
-    width : 100%; 
-    margin-bottom: 100px;
-    padding: 0 5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-#img1-1 {
-    width: 45%;
-    max-width: 400x;
-    height: 500px;
-   margin-top: 2px;
-   margin-left: 10px;
-   display: block;
-}
-
-#overhead2{
-  padding-top:  90px;
-  height: fit-content;
-  width: fit-content;
-}
-  
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 .wrapper {
   flex-direction: column;
   width: 1216px;
@@ -163,8 +132,20 @@ margin-bottom: 15px;
   unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FF;
   background-color: rgb(240,240,240);
 }
-.wrapper i {
-  margin: 0px 50px;
+
+
+/* start of our-team section */
+#our-team-section{
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJbecmNE.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FF;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#our-team-section i {
   top: 50%;
   height: 50px;
   width: 50px;
@@ -174,28 +155,113 @@ margin-bottom: 15px;
   color: #282961;
   text-align: center;
   line-height: 50px;
-  background: #fff;
+
   border-radius: 50%;
   box-shadow: 0 3px 6px rgba(0,0,0,0.23);
   transform: translateY(-50%);
 }
 
-.wrapper span{
+#our-team-section i:active{
+  transform: translateY(-50%) scale(0.85);
+}
+#our-team-section i:first-child{
+  left: 50px;
+}
+#our-team-section i:last-child{
+  right: 50px;
+}
+
+
+.carousel{
+  
+    list-style: none;
+    height:400px;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+.carousel :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+.card {
+  scroll-snap-align: start;
+  list-style: none;
+  /* background: #fff; */
+  height: 350px;
+  flex-direction: column;
+  border-radius: 8px;
+  position: relative;
+  top: -20px;
+  display: flex;
+  justify-content:space-around;
+  flex-direction: row;
+  align-items: center;
+
+}
+.carousel .card .img {
+  background-image: linear-gradient(#282961e3,#808087);
+  height: 148px;
+  width: 148px;
+  border-radius: 50%;
+  transform: translateY(10%) scale(1.2)
+}
+.card .img img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+}
+.carousel .card h2 {
+  font-weight: 500;
+  font-size: 1.56rem;
+  margin: 41px -35px 0px;
+  justify-content: center;
+  display: flex;
+}
+#img2-1{
+  color: #282961;
+}
+.carousel .card span {
+  color: #6A6D78;
+  font-size: 1.31rem;
+}
+.team-name{
+text-align: center;
+font-size: 40px;
+margin-bottom: 40px ;
+}
+#our-team-section span{
   font-size: xx-large;
     margin-left: 25px;
     margin-top: 19px;
 }
 
-.color-changing-text {
-  display: inline-block;
-  font-size: 24px;
-  color: #282961;
-}
+/* end of our-team section */
 
-.color-changing-text span {
-  display: inline-block;
- color: #282961;
-}
+
+
+
+
 
 .swiper-pagination {
   position: absolute;
@@ -242,94 +308,25 @@ margin-bottom: 15px;
 }
 
 #member1{
-  justify-content: center;
-  display: grid;
-  margin-top: 100px;
-  margin-right: 354px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 200px;
 }
 
 #member2{
   justify-content: center;
-  display: grid;
-  margin-top: -244px;
-  margin-left: 330px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  width:200px;
+
 }
 
 #one-member{
-  margin-top: 100px;
-}
-.wrapper i:active{
-  transform: translateY(-50%) scale(0.85);
-}
-.wrapper i:first-child{
-  left: -22px;
-}
-.wrapper i:last-child{
-  right: -22px;
+  margin: auto 0;
 }
 
-#carousel{
-    background-color: white;
-    list-style: none;
-    height: 90%;
-    width: 80%;
-    border-radius: 10px;
-}
-
-#carousel::-webkit-scrollbar {
-  display: none;
-}
-
-#carousel.no-transition {
-  scroll-behavior: auto;
-}
-#carousel.dragging {
-  scroll-snap-type: none;
-  scroll-behavior: auto;
-}
-#carousel.dragging .card {
-  cursor: grab;
-  user-select: none;
-}
-#carousel :where(.card, .img) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#carousel .card {
-  scroll-snap-align: start;
-  list-style: none;
-  background: #fff;
-  cursor: pointer;
-  padding-bottom: 15px;
-  flex-direction: column;
-  border-radius: 8px;
-}
-#carousel .card .img {
-  background: #282961;
-  height: 148px;
-  width: 148px;
-  border-radius: 50%;
-  transform: translateY(10%) scale(1.2)
-}
-.card .img img {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid #fff;
-}
-#carousel .card h2 {
-  font-weight: 500;
-  font-size: 1.56rem;
-  margin: 41px -35px 0px;
-  justify-content: center;
-  display: flex;
-}
-#img2-1{
-  color: #282961;
-}
-#carousel .card span {
-  color: #6A6D78;
-  font-size: 1.31rem;
-}
