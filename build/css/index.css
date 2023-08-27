@@ -141,8 +141,7 @@ margin-bottom: 15px;
   justify-content: center;
   flex-direction: column;
   height: 441px;
-    padding-top: 71px;
-
+  padding-top: 71px;
 }
 #our-team-section i {
   top: 50%;
@@ -170,9 +169,7 @@ margin-bottom: 15px;
   right: 50px;
 }
 
-
 .carousel{
-  
     list-style: none;
     height:400px;
     width: 80%;
