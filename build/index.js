@@ -48,4 +48,14 @@ document.addEventListener("DOMContentLoaded", () => {
             bulletActiveClass: 'custom-bullet-active'
         },
     });
+  
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    var logoLink = document.getElementById("logo-link");
+
+    logoLink.addEventListener("click", function(event) {
+        event.preventDefault();  // Prevent the default link behavior
+        window.location.hash = "first";  // Change the URL fragment to "first"
+    });
 });
