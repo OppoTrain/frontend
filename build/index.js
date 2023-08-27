@@ -49,3 +49,25 @@ document.addEventListener("DOMContentLoaded", () => {
         },
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const sectionLinks = document.querySelectorAll("#our-story-section-wrap");
+    
+    sectionLinks.forEach(link => {
+        link.addEventListener("click", (event) => {
+            event.preventDefault(); // Prevent default link behavior
+            
+            const target = link.getAttribute("data-target");
+            const targetSection = document.getElementById(target);
+            
+            if (targetSection) {
+                targetSection.scrollIntoView({ behavior: "smooth" });
+                
+                // Update the URL without the full ID
+                history.replaceState(null, null, `#${target}`);
+            }
+        });
+    
+    });
+});
+
