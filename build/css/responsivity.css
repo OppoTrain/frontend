@@ -300,4 +300,11 @@
     .carousel .team-name {
         font-size: 20px;
     }
+    #img2-1{
+        width: 13px;
+        height: 13px;
+        margin-left: 10px;
+        position: relative;
+        top: 1px;
+    }
 }
