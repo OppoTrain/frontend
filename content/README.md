@@ -3,9 +3,12 @@
 
 #### Default Section: Main 
 
-We aim to create a culture where students get help in finding the right guidance to get an internship based on their own skills and needs using Conversational AI technology. 
 
-#### first section: About us 
+Your Path to Find the right Internship
+
+Finding the right internship is an important step towards building your career, we aim to help you in finding the right opportunities using Conversational AI technology. 
+
+#### first section: Story
 
 Our story
 
