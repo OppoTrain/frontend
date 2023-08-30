@@ -64,6 +64,8 @@ body {
 /* start of first section */
 #first-section{
 padding-top: 50px ;
+height: 700px;
+
 }
 #first-part{
   width: 45%;
@@ -96,7 +98,7 @@ margin-bottom: 15px;
 }
 #second-part{
   width: 15%;
-  height: 100%;
+  height: fit-content;
   /* min-width: 290px; */
   /* min-height: 520px; */
   /* position: relative; */
