@@ -63,10 +63,11 @@ body {
 
 /* start of first section */
 #first-section{
-padding-top: 50px ;
-height: 700px;
-
+padding-top: 100px ;
+height: 100%;
 }
+
+
 #first-part{
   width: 45%;
   height: 100%;
@@ -96,15 +97,21 @@ margin-bottom: 15px;
     width: 180px;
     margin-left: 50px;
 }
+
+
 #second-part{
-  width: 15%;
-  height: fit-content;
-  /* min-width: 290px; */
+
+  width: fit-content;
+  height: 500px;
+  max-width: 173px;
+  /* min-width: 247px; */
   /* min-height: 520px; */
-  /* position: relative; */
+  position: relative;
   left: 0;
   /* display: inline-table; */
   position: relative;
+  top: -325px;
+
 }
 
 #second-part img {

@@ -1,4 +1,41 @@
 /* for nav bar only */
+@media screen and (max-width: 1410px) {
+    #second-part {
+      max-width: 150px;
+      position: relative;
+      top: -250px;
+    }
+  }
+  
+  @media screen and (max-width: 1300px) {
+    #second-part {
+      max-width: 130px;
+      position: relative;
+      top: -185px;
+    }
+  }
+  
+  @media screen and (max-width: 1000px) {
+    #first-section {
+      
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 50px 5%;
+      height: 1212px;
+    }
+  
+    #first-part {
+      width: 100%;
+    }
+  
+    #second-part {
+      max-width: 130px;
+      position: relative;
+      left: 150px; /* Adjusted left property */
+    }
+  }
+  
 @media screen and (  max-width: 920px) {
     #links {
         display: none;
@@ -73,8 +110,9 @@
 
 @media (max-width: 1200px) {
     #btns-qr {
-        flex-direction:column;
+        /* flex-direction:column; */
         align-items: center;
+        display: flex;
     }
 
    #Qr{
@@ -115,6 +153,7 @@
     /* Adjustments for screens with a maximum width of 768px */
   
     /* Center everything in the carousel */
+   
     #left{
         z-index: 1;
     }
@@ -215,6 +254,7 @@
     }
     #first-section{
         padding-top: 50px ;
+        height: 1310px;     
         }
     #first-part{
         width: 100%;
@@ -235,9 +275,14 @@
     } 
     #second-part{
        
-        position:relative;
-         left: -40px;
+       
+        max-width: 107px;
+        position: relative;
+        left: 118px;
+        padding-top: 10px;
+    
     }
+   
     /* end of first-section */
 
 
