@@ -1,259 +1,327 @@
-/* for nav bar only */
-@media screen and (  max-width: 920px) {
-    #links {
-        display: none;
-        position: absolute;
-        top: 80px;
-        right: 0;
-        width: 100%;
-        background-color: #FDF9F5;
-        box-shadow: 1px 2px 10px #f9e9d9;
-        z-index: 998;
-        text-align: center;
-        height: 150%;
-        margin: 0;
-    }
-
-    #links.open {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #join-btn{
-        display: none;
-    }
-
-    #links a {
-        margin: 0;
-        padding: 15px;
-        border-radius: 0;
-        border-bottom: 1px solid #425980;
-        text-decoration: none;
-        color: #425980;
-        transition: background-color 0.3s, color 0.3s, border 0.3s;
-    }
-
-    #links a:hover{
-        border-radius: 20px;
-    }
-
-    #links a:last-child {
-        border-bottom: none;
-    }
-
-    #burger-icon {
-        display: block;
-        cursor: pointer;
-        
-    }
-
-    #burger-icon .bar {
-        display: block;
-        width: 25px;
-        height: 3px;
-        margin: 5px auto;
-        background-color: #425980;
-        transition: transform 0.3s, background-color 0.3s;
-    }
-
-    #burger-icon.open .bar:nth-child(1) {
-        transform: rotate(-45deg) translate(-5px, 6px);
-    }
-
-    #burger-icon.open .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    #burger-icon.open .bar:nth-child(3) {
-        transform: rotate(45deg) translate(-5px, -6px);
-    }
-   
-}
-
-
-@media (max-width: 1200px) {
-    #btns-qr {
-        flex-direction:column;
-        align-items: center;
-    }
-
-   #Qr{
-        margin-left:0;
-    }
-
-    #title{
-        /* margin: 40px 0; */
-    }
-    #first-section{
-        padding-top: 100px ;
-        }
-}
-
-/* @media screen and (  max-width: 920px) {
-    #our-team-section{
-        height: 800px;
-    }
-     
-    #carousel2 {
-        height: 800px;
-        
-    }
-    #carousel4{
-        height: 800px;
-    }
-    
-
-    .card{
-        flex-direction: column;
-        height: 600px;
-        /* height: fit-content; 
-        
-    }
-} */
-
-@media screen and (max-width: 768px) {
-    /* Adjustments for screens with a maximum width of 768px */
-  
-    /* Center everything in the carousel */
-    #left{
-        z-index: 1;
-    }
-    .carousel {
-      width: 100%;
-      /* disp slay: flex; */
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    /* Adjust margins and spacing */
-    .carousel .team-name {
-  
-      font-size: 30px; /* Adjust font size if necessary */
-    }
-  
-    .carousel .card {
-      height: auto;
-      margin: 20px 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .carousel .card .img {
-      height: 120px;
-      width: 120px;
-      border-radius: 50%;
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-image: linear-gradient(#282961e3, #808087);
-    }
-    #carousel3{
-        top: 100px;
-        position: relative;
-        top: 53px;
-    }
-    
-    #carousel1{
-        position: relative;
-        top: 53px;
- 
-    }
-  
-  
-    .carousel .card .img img {
-      width: 112px;
-      height: 112px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid #fff;
-    }
-  
-    .carousel .card h2 {
-      font-size: 1.5rem;
-      margin-top: 30px ;
-      display: flex;
-      align-items: center;
-    }
-  
-    .carousel .card span {
-      font-size: 1rem;
-    }
-  
-    /* Keep arrows in their positions */
-  
-    /* Adjust span size */
-    #our-team-section span {
-      font-size: large;
-      margin-left: 15px;
-      margin-top: 10px;
-    }
-  
-    /* Center member sections */
-    #member1, #member2, #one-member {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-}
-  
-  
-@media (max-width: 768px) {
-    /* start of first-section */
-    #conatiner{
-        padding: 0 5%;
-        text-align: center;
-        align-items: center;
-
-    }
-    .section{
-        flex-direction: column;
-        padding: 50px 5%;
-    }
-    #first-section{
-        padding-top: 50px ;
-        }
-    #first-part{
-        width: 100%;
-        
-    }
-    #btns-qr{
-        flex-direction: column;
-        align-items: center;
-    }
-    #Qr {
-        margin: 10px 0;
-    }
-    #first-img {
-
-        width: 100%;
-        height: auto;
-        padding: 0 15% 0 0 ;
-    } 
+/* Navbar Media Queries */
+@media screen and (min-width: 3500px){
     #second-part{
-       
-        position:relative;
-         left: -40px;
+        left: 100px;
+        max-width: 160px;
+        /* height: 10px; */
     }
-    /* end of first-section */
+}
+@media screen and (max-width: 1410px) {
+    #second-part {
+      max-width: 150px;
+      position: relative;
+      top: -250px;
+    }
+}
+@media screen and (max-width: 1300px) {
+#second-part {
+    max-width: 130px;
+    position: relative;
+    top: -185px;
+}
+}
+@media screen and (max-width: 1200px) {
+#btns-qr {
+    align-items: center;
+    display: flex;
+}
 
+#Qr {
+    margin-left: 0;
+}
 
+#title {
+    /* margin: 40px 0; */
+}
 
-    /* start of our-story-section */  
-    
-    /* end of our-story-section */  
+#first-section {
+    padding-top: 100px;
+}
+}
+@media screen and (max-width: 1150px) {
+#second-part {
+    max-width: 130px;
+    position: relative;
+    top: -255px;
+}
 
+#Qr {
+    position: relative;
+    left: 190px;
+}
+}
+@media screen and (max-width: 1100px) {
+#Qr {
+    position: relative;
+    left: 145px;
+}
+}
+@media screen and (max-width: 1000px) {
+#first-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 5%;
+    height: 1000px;
+    }
 
+    #first-part {
+    width: 100%;
+    justify-content: space-between;
+    }
 
-    /* start of our-team-section */  
-    
-    /* end of our-team-section */ 
-    
+    #second-part {
+    max-width: 130px;
+    height: 500px;
+    position: relative;
+    left: 150px; /* Adjusted left property */
+    top: -180px;
+    }
+}
+@media screen and (max-width: 1000px) {
+#Qr {
+    position: relative;
+    left: 0;
+
+}
+#btns-qr{
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+}
+@media screen and (max-width: 920px) {
+#links {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    background-color: #FDF9F5;
+    box-shadow: 1px 2px 10px #f9e9d9;
+    z-index: 998;
+    text-align: center;
+    height: 150%;
+    margin: 0;
+}
+
+#links.open {
+    display: flex;
+    flex-direction: column;
+}
+
+#join-btn {
+    display: none;
+}
+
+#links a {
+    margin: 0;
+    padding: 15px;
+    border-radius: 0;
+    border-bottom: 1px solid #425980;
+    text-decoration: none;
+    color: #425980;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+#links a:hover {
+    border-radius: 20px;
+}
+
+#links a:last-child {
+    border-bottom: none;
+}
+
+#burger-icon {
+    display: block;
+    cursor: pointer;
+}
+
+#burger-icon .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #425980;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+#burger-icon.open .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+#burger-icon.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+#burger-icon.open .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+}
+@media screen and (max-width: 768px) {
+/* Adjustments for screens with a maximum width of 768px */
+
+#left {
+    z-index: 1;
+}
+
+.carousel {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Adjust margins and spacing */
+.carousel .team-name {
+    font-size: 30px; /* Adjust font size if necessary */
+}
+
+.carousel .card {
+    height: auto;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel .card .img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#282961e3, #808087);
+}
+
+#carousel3 {
+    top: 100px;
+    position: relative;
+    top: 53px;
+}
+
+#carousel1 {
+    position: relative;
+    top: 53px;
+}
+
+.carousel .card .img img {
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+}
+
+.carousel .card h2 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.carousel .card span {
+    font-size: 1rem;
+}
+
+/* Keep arrows in their positions */
+
+/* Adjust span size */
+#our-team-section span {
+    font-size: large;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+/* Center member sections */
+#member1,
+#member2,
+#one-member {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+}
+@media screen and (max-width: 768px) {
+/* Start of first-section */
+#conatiner {
+    padding: 0 5%;
+    text-align: center;
+    align-items: center;
+}
+
+.section {
+    flex-direction: column;
+    padding: 50px 5%;
+}
+
+#first-section {
+    padding-top: 50px;
+    height: 1100px;
+}
+
+#first-part {
+    width: 100%;
+}
+
+#btns-qr {
+    flex-direction: column;
+    align-items: center;
+}
+
+#Qr {
+    margin: 10px 0;
+}
+
+#first-img {
+    width: 100%;
+    height: auto;
+    padding: 0 15% 0 0;
+}
+
+#second-part {
+    max-width: 107px;
+    position: relative;
+    left: 118px;
+    padding-top: 10px;
+}
+
+/* End of first-section */
+
+/* Start of our-story-section */
+
+/* End of our-story-section */
+
+/* Start of our-team-section */
+
+/* End of our-team-section */
+}
+@media (max-width: 570px) {
+    #first-section {
+       
+        height: 1200px;
+    }
+}
+@media (max-width: 400px) {
+    #first-section {
+       
+        height: 1250px;
+    }
+    #second-part{
+        max-width: 72px;
+        top: -108px;
+        left: 90px;
+    }
 }
 @media (max-width: 550px) {
+    #our-team-section{
+        height: 441px;
+        padding-top: 71px;
+    }
     .carousel .card h2 {
         font-size: 1rem;
         margin-top: 30px ;

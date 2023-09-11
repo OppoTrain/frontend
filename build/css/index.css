@@ -25,7 +25,7 @@ body {
     border-radius: 20px;
     width : 250px;
     height: 65px;
-    
+    border: none #425980;
     display: block;
 
     transition: background-color 0.3s, font-weight 0.3s;
@@ -63,8 +63,11 @@ body {
 
 /* start of first section */
 #first-section{
-padding-top: 50px ;
+padding-top: 100px ;
+height: 100%;
 }
+
+
 #first-part{
   width: 45%;
   height: 100%;
@@ -94,13 +97,56 @@ margin-bottom: 15px;
     width: 180px;
     margin-left: 50px;
 }
+
+
 #second-part{
-    width: 45%;
-    height: 100%;
-        min-width: 290px;
-    min-height: 520px; 
-    position:relative;
-     left: 0;
+
+  width: fit-content;
+  height: 500px;
+  max-width: 173px;
+  /* min-width: 247px; */
+  /* min-height: 520px; */
+  position: relative;
+  left: 0;
+  /* display: inline-table; */
+  position: relative;
+  top: -305px;
+
+}
+
+#second-part img {
+  max-width: 115%;
+  height: auto;
+  /* transform: translate(-20%, -20%); */
+  border-radius: 6%;
+  border: 3.5px solid #425980;
+}
+#IMG_1{
+  transform: translate(-100%, 150%);
+  z-index: 1000;
+  position: absolute;
+}
+
+#IMG_2{
+  transform: translate(-25%, 78%);
+}
+#IMG_2:hover{
+  z-index: 1010;
+  position: inherit;
+}
+#IMG_3{
+  transform: translate(-165%, 5%);
+}
+#IMG_3:hover{
+  z-index: 1010;
+  position: inherit;
+}
+#IMG_4{
+  transform: translate(-77%, -102%);
+}
+#IMG_4:hover{
+  z-index: 1010;
+  position: inherit;
 }
 /* end of first section */
 
@@ -140,8 +186,7 @@ margin-bottom: 15px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 441px;
-  padding-top: 71px;
+ 
 }
 #our-team-section i {
   top: 50%;
