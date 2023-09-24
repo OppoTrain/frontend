@@ -4,7 +4,7 @@
 #### Default main Section 
 
 
-Your Path to Find the right Internship
+Your Path to Find the right Internship or Find the right internship for you
 
 Finding the right internship is an important step towards building your career, we aim to help you in finding the right opportunities using Conversational AI technology. 
 
