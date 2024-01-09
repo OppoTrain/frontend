@@ -8,7 +8,16 @@ document.addEventListener('DOMContentLoaded', () => {
         button.classList.toggle('open');
     });
 });
+window.onscroll = function() {scrollFunction()};
 
+function scrollFunction() {
+    var myButton = document.getElementById("join-btn");
+    if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+        myButton.style.visibility = "visible";
+    } else {
+        myButton.style.visibility = "hidden";
+    }
+}
 document.addEventListener("DOMContentLoaded", () => {
     const wrapper = document.querySelector("#our-team-section");
     const carousels = document.querySelectorAll("#our-team-section ul[class^='carousel']");
