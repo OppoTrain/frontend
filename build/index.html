@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Opportrain</title>
     <!-- enternal links: -->
-    <link rel="shortcut icon" type="image/x-icon" href="imgs/new-logo.jpeg"/>
+    <link rel="shortcut icon" type="image/x-icon" href="imgs/logo.png"/>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/footer.css">
@@ -28,7 +28,7 @@
         <div id="content">
             <div id="logo"> 
                 <a   href="#first-section-wrap" >
-                    <img src="imgs/new-logo.jpeg" alt="LOGO" >
+                    <img src="imgs/logo.png" alt="LOGO" >
                 </a>
             </div>
             <div id="burger-icon" class="closed">
@@ -37,9 +37,11 @@
                 <span class="bar"></span>
             </div> 
             <div   id="links" class="closed">
+                <a href="#our-App-section-wrap" >Our App</a>
                 <a href="#our-story-section-wrap"  data-target="our-team">Our Story</a>
                 <a href="#our-team-section-wrap">Our Team</a>
             </div>
+
             <button id="join-btn" class="btn" onclick="window.open('https://t.me/Opportrain_Bot', '_blank');">Join Our Bot</button>
         </div>
     </div>
@@ -59,11 +61,11 @@
                     <button id="btn2" class="btn" onclick="window.location.href='https://t.me/Opportrain_Bot';"> Join Our Bot</button>
                 </div>
                 <div class="second-part">
-                    <img alt="QR-code" id="Qr" src="imgs/Qr.png">
+                    <img alt="QR-code" id="Qr" src="imgs/OpportrainQR.svg" >
                 </div>
             </div>
         </div>
-        <div class="wrap">
+        <div id="our-App-section-wrap" class="wrap">
             <div id= "img-section" class="section">
                 <div class="left-side">
                     <h1  class="title">
@@ -76,12 +78,21 @@
                 </div>
                 <div class ="right-side">
                     <div class="left-col">
-                        <img id="IMG_3" src="imgs\chat-img\IMG_3.png" alt="img example from bot">
-                        <img id="IMG_4" src="imgs\chat-img\IMG_4.png" alt="img example from bot">
+                        <div class="img-wraper">
+                            <img id="IMG_3" src="imgs\chat-img\IMG_3.png" alt="img example from bot">
+                        </div>
+                        <div class="img-wraper">
+                            <img id="IMG_4" src="imgs\chat-img\IMG_4.png" alt="img example from bot">
+                        </div>
                     </div>
-                    <div class="right-col">
-                        <img id="IMG_1" src="imgs\chat-img\IMG_1.png" alt="img example from bot">
-                        <img id="IMG_2" src="imgs\chat-img\IMG_2.png" alt="img example from bot">
+                    <div class="right-col" id="right-col" >
+                        <div class="img-wraper">
+                            <img id="IMG_1" src="imgs\chat-img\IMG_1.png" alt="img example from bot">
+                        </div>
+                        <div class="img-wraper">
+                             <img id="IMG_2" src="imgs\chat-img\IMG_2.png" alt="img example from bot">
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -209,7 +220,7 @@
             </a>
         </div>
         <div >
-          <p id="pf"> ©2023 Opportrain Inc </p>
+          <p id="pf"> ©2024 Opportrain Inc </p>
         </div> 
     </footer>
 </body>
