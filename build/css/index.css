@@ -42,7 +42,8 @@ body {
     padding-top:100px;
   } 
   .section {
-    background-color:  rgb(240,240,240);
+    background: #F0F0F0;
+    background-color: #F0F0F0;
     border-radius: 20px;
     border: 2px solid transparent;
     height: 100%;
@@ -440,6 +441,7 @@ margin-bottom: 40px ;
   width: 50%;
   box-sizing: border-box;
 position: relative;
+
   /*top:  -80px;*/
 }
 .right-side {
@@ -451,80 +453,140 @@ position: relative;
   position: relative;
   right: -50px;
   bottom: -50px;
+
 }
 
 .left-col {
+  border-right: 2px solid rgb(232 232 235);
   display: flex;
   flex-direction: column;
   width: 50%;
+  z-index:0;
+  overflow: hidden;
+
 }
 .right-col {
+  padding-left: 1px;
+  overflow: hidden;
+  margin-left:20px;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   width: 50%;
   position: relative;
   bottom: 0;
+  /* Animation */
+  /*animation-name: slowMove;*/
+  /*animation-duration: 20s; !* Adjust the time for slower or faster movement *!*/
+  /*animation-iteration-count: infinite;*/
+  /*animation-timing-function: linear;*/
+  /*animation: scrollImage 30s linear infinite;*/
+  /*height: ;*/
+}
+.right-col img {
+  display: block; /* Stack images vertically */
+  margin-bottom: 10px; /* Spacing between images */
+  /* Other styles... */
+}
+@keyframes slowMove {
+  0%, 100% { transform: translateY(0); }
+  25% { transform: translateY(200px); } /* Moves right */
+  50% { transform: translateY(0); } /* Returns to original position */
+  75% { transform: translateY(-200px); } /* Moves left */
 }
 
 
-
-
 #IMG_1{
+  background:  lightgray 50% / cover no-repeat;
+
+  box-shadow: 0px 8px 24px 0px rgba(66, 89, 128, 0.25);
   /*transform: translate(-100%, 150%);*/
   /*z-index: 1000;*/
   /*position: absolute;*/
   /*width: 300px;*/
   /*height: 200px;*/
+  border-radius: 12px;
 
-  max-width: 100%;
+  max-width: 99%;
   max-height: 100%;
   object-fit: contain;
 }
-#IMG_1:hover{
-  border: 4px solid whitesmoke;
-
+@keyframes scrollImage {
+  0% {
+    transform: translateY(100%); /* Start off-screen to the right */
+  }
+  100% {
+    transform: translateY(-100%); /* Move to off-screen to the left */
+  }
 }
+/*#IMG_1:hover{*/
+/*  border: 4px solid whitesmoke;*/
+
+/*}*/
 #IMG_2{
   /*width: 300px;*/
   /*height: 200px;*/
+  border-radius: 12px;
+  background: lightgray 50% / cover no-repeat;
 
+  box-shadow: 0px 8px 24px 0px rgba(66, 89, 128, 0.25);
   /*transform: translate(-25%, 78%);*/
-  max-width: 100%;
+  max-width: 99%;
   max-height: 100%;
   object-fit: contain;
 }
-#IMG_2:hover{
-  border: 3.5px solid whitesmoke;
-  z-index: 1010;
-  position: inherit;
-}
+/*#IMG_2:hover{*/
+/*  border: 3.5px solid whitesmoke;*/
+/*  z-index: 1010;*/
+/*  position: inherit;*/
+/*}*/
 #IMG_3{
-  /*width: 300px;*/
-  /*height: 200px;*/
+  border-radius: 12px;
+  border-radius: 12px;
+  background:  lightgray -1.153px -251.346px / 100% 199.221% no-repeat;
 
-  /*max-width: 100%;*/
+  box-shadow: 0px 0px 24px 0px rgba(66, 89, 128, 0.25);
+  /* width: 300px; */
+  /* height: 200px; */
+  max-width: 99%;
   /*max-height: 100%;*/
   /*height: auto;*/
   /*object-fit: contain;*/
   /*transform: translate(-165%, 5%);*/
 }
-#IMG_3:hover{
-  border: 3.5px solid whitesmoke;
-  z-index: 1010;
-  position: inherit;
-}
+/*#IMG_3:hover{*/
+/*  border: 3.5px solid whitesmoke;*/
+/*  z-index: 1010;*/
+/*  position: inherit;*/
+/*}*/
 #IMG_4{
   /*width: 300px;*/
   /*height: 200px;*/
+  /* border-radius: 12px; */
+  border-radius: 12px;
 
-  /*max-width: 100%;*/
+  max-width:99%;
+  background:  lightgray -1.153px -251.346px / 100% 199.221% no-repeat;
+
+  box-shadow: 0px 08px 24px 0px rgba(66, 89, 128, 0.25);
   /*max-height: 100%;*/
   /*height: auto;*/
   /*object-fit: contain;*/
   /*transform: translate(-77%, -102%);*/
 }
-#IMG_4:hover{
-  border: 3.5px solid whitesmoke;
-  z-index: 1010;
-  position: inherit;
+/*#IMG_4:hover{*/
+/*  border: 3.5px solid whitesmoke;*/
+/*  z-index: 1010;*/
+/*  position: inherit;*/
+/*}*/
+
+
+.img-wraper{
+  width: 100%;
+
+  margin: 10px 0;border-radius: 12px;
+
+  /*background:  lightgray 1.019px -2.942px / 100% 199.762% no-repeat;*/
+  /*box-shadow: 0px 8px 24px 0px rgba(66, 89, 128, 0.25);*/
+
 }

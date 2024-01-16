@@ -79,7 +79,7 @@
     left: 50px;
 }
     .left-col{
-        /*display: none;*/
+        /* display: none; */
         position: relative;
         bottom: 100px;
         left: 0;
@@ -180,7 +180,7 @@ height: 100%;
     box-shadow: 1px 2px 10px #f9e9d9;
     z-index: 998;
     text-align: center;
-    height: 150%;
+    height: 250%;
     margin: 0;
 }
 
