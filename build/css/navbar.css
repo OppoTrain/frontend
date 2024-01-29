@@ -85,3 +85,13 @@
     width : 20%;
     margin: 20% 0;
 }
+.menu-wrapper.closed{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+.menu-wrapper.open{
+    display: unset;
+    background-color: rgba(140, 131, 131, 0.16);
+}

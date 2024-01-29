@@ -320,7 +320,7 @@
 }
 @media (max-width: 670px) {
     #img-section{
-        height: 900px;
+        height: 800px;
         padding: 50px 5%;
         position: relative;
     }
@@ -465,4 +465,14 @@
     }
     #btn2{
         width: 230px;
-    }}
+    }
+    #img-section{
+            height: 800px;
+    }
+}
+@media (max-width: 420px) {
+    #img-section{
+        height: 1050px;
+    }
+}
+

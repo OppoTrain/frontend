@@ -1,12 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
     const burgerIcon = document.getElementById('burger-icon');
     const links = document.getElementById('links');
-    const button =document.getElementById('GetStart-btn');
+    const menuWrapper = document.getElementById('menu-wrapper')
     burgerIcon.addEventListener('click', () => {
         burgerIcon.classList.toggle('open');
         links.classList.toggle('open');
-        button.classList.toggle('open');
+        menuWrapper.classList.toggle('open');
     });
+    menuWrapper.addEventListener('click', ()=>{
+        burgerIcon.classList.toggle('open');
+        links.classList.toggle('open');
+        menuWrapper.classList.toggle('open');
+    })
 });
 window.onscroll = function() {scrollFunction()};
 // scrolling effect:
@@ -49,25 +54,49 @@ document.addEventListener('DOMContentLoaded', function() {
 
     setInterval(scrollImages, 20);
 });
+
 const links = document.querySelectorAll("#links a");
 const sectionWraps = document.querySelectorAll(".wrap");
-
 // update the active link
+// function updateActiveLink() {
+//     sectionWraps.forEach((wrap, index) => {
+//         console.log("Updating active link");
+//         if (indexFound) return;
+//         const rect = wrap.getBoundingClientRect();
+//         const offsetPosition = 80 + 100;
+//         if (rect.top <= offsetPosition && rect.bottom >= offsetPosition) {
+//             links.forEach((link) => link.classList.remove("active"));
+//             links[index].classList.add("active");
+//         }
+//     });
+// }
+// // window.addEventListener('scroll', updateActiveLink);
+//
+// // add scroll event listener to update the active link
+// window.addEventListener("scroll", updateActiveLink);
+//
+// updateActiveLink();
 function updateActiveLink() {
+    let indexFound = false;
+    const offsetPosition = 80 + 100; // Offset for the navbar and padding
+
     sectionWraps.forEach((wrap, index) => {
-        console.log("Updating active link");
         if (indexFound) return;
         const rect = wrap.getBoundingClientRect();
-        console.log(index, rect.top, rect.bottom);
-        if (rect.top <= 50 && rect.bottom >= 50) {
-            console.log("Active section before:", index);
+        const wrapTopRelativeToViewport = rect.top + window.scrollY; // Get the wrap's top relative to the document
+
+        // Check if the wrap's top is within a range of the offsetPosition
+        // You might need to adjust this logic based on how you want to detect the active section
+        if (wrapTopRelativeToViewport <= window.scrollY + offsetPosition && wrapTopRelativeToViewport + rect.height > window.scrollY + offsetPosition) {
             links.forEach((link) => link.classList.remove("active"));
             links[index].classList.add("active");
-            console.log("Active section after:", index);
+            indexFound = true;
         }
     });
-
 }
+
+window.addEventListener('scroll', updateActiveLink);
+updateActiveLink(); // Initial call to set the active link on page load
 
 
 //  handle link clicks
@@ -90,10 +119,6 @@ links.forEach((link) => {
     link.addEventListener("click", handleLinkClick);
 });
 
-// add scroll event listener to update the active link
-window.addEventListener("scroll", updateActiveLink);
-
-updateActiveLink();
 document.addEventListener('DOMContentLoaded', function() {
     var links = document.querySelectorAll('#links a');
     var userClickedLink = false; // Flag to indicate if a link was clicked
@@ -246,3 +271,28 @@ document.addEventListener("DOMContentLoaded", () => {
     
     });
 });
+//
+// const links = document.querySelectorAll("#links a");
+// const sectionWraps = document.querySelectorAll(".wrap");
+
+// function updateActiveLink() {
+//     let indexFound = false;  // Declare indexFound here
+//
+//     sectionWraps.forEach((wrap, index) => {
+//         if (indexFound) return;  // Skip further checks if active section is found
+//
+//         const rect = wrap.getBoundingClientRect();
+//         const offsetPosition = 80 + 100;  // Navbar height + padding
+//
+//         console.log(`Wrap ${index}: rect.top = ${rect.top}, rect.bottom = ${rect.bottom}, offsetPosition = ${offsetPosition}`);
+//
+//         if (rect.top <= offsetPosition && rect.bottom >= offsetPosition) {
+//             console.log(`Activating link ${index}`);
+//             links.forEach((link) => link.classList.remove("active"));
+//             links[index].classList.add("active");
+//             indexFound = true;  // Set flag to true when active section is found
+//         }
+//     });
+// }
+//
+// // window.addEventListener('scroll', updateActiveLink);
