@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Opportrain</title>
     <!-- enternal links: -->
-    <link rel="shortcut icon" type="image/x-icon" href="imgs/opportrain-logo.png"/>
+    <link rel="shortcut icon" type="image/x-icon" href="imgs/logo/logo.png"/>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/footer.css">
@@ -24,88 +24,105 @@
 </head>
 
 <body>
+<div id="menu-wrapper" class="menu-wrapper closed"></div>
+
     <div id="nav-bar">
         <div id="content">
-            <div id="logo"> 
+            <div id="logo">
                 <a   href="#first-section-wrap" >
-                    <img src="imgs/opportrain-logo.png" alt="LOGO" >
+                    <img src="imgs/logo/logo.png" alt="LOGO" >
                 </a>
             </div>
             <div id="burger-icon" class="closed">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
-            </div> 
+            </div>
             <div   id="links" class="closed">
+                <a href="#our-App-section-wrap" >Our App</a>
                 <a href="#our-story-section-wrap"  data-target="our-team">Our Story</a>
                 <a href="#our-team-section-wrap">Our Team</a>
             </div>
             <button id="join-btn" class="btn" onclick="window.open('https://t.me/Opportrain_Bot', '_blank');">Join Our Bot</button>
         </div>
     </div>
+
     <div id="conatiner">
-
-
-        <div id="first-section-wrap"     class="wrap">
-
-
+        <div id="first-section-wrap" class="wrap">
             <div id="first-section" class="section">
-
-
-
                 <div id="first-part" >
                     <h1 id="title" class="title">Your Path to Find the right Internship
                     </h1>
-                    <p class="text"> 
-                        Finding the right internship is an important step towards building your career,
-                         we aim to help you in finding the right opportunities using Conversational AI technology.
-                    </p>
-                    <div id="btns-qr">
-                        <div id="btns"> 
-                            <!-- <button id="btn1" class="btn" > Watch Demo </button> -->
-                            <button id="btn2" class="btn" onclick="window.location.href='https://t.me/Opportrain_Bot';"> Join Our Bot</button>
-                        </div> 
-                        <img alt="QR" id="Qr" src="imgs/Qr.png">
+                    <div class="wrapp">
+                        <p class="text">
+                            Finding the right internship is an important step towards building your career,
+                             we aim to help you in finding the right opportunities using Conversational AI technology.
+                        </p>
+                     </div>
+                    <button id="btn2" class="btn" onclick="window.location.href='https://t.me/Opportrain_Bot';"> Join Our Bot</button>
+                </div>
+                <div class="second-part">
+                    <img alt="QR-code" id="Qr" src="imgs/OpportrainQR.svg" onclick="window.open('https://t.me/Opportrain_Bot', '_blank');" >
+                </div>
+            </div>
+        </div>
+
+        <div id="our-App-section-wrap" class="wrap">
+            <div id= "img-section" class="section">
+                <div class="left-side">
+                    <h1  class="title">
+                        Empowering Futures:
+                        Explore Opportunities Near You
+                    </h1>
+                    <div id="img-txt" class="text">
+                        Seamlessly explore a myriad of opportunities right in your local community, whether you're seeking remote positions, in-office roles, or a blend of both.
                     </div>
                 </div>
+                <div class ="right-side">
+                    <div class="left-col">
+                        <div class="img-wraper">
+                            <img id="IMG_3" class="left-col-image" src="imgs/chat-imgs/IMG_3.png" alt="img example from bot">
+                        </div>
+                        <div class="img-wraper">
+                            <img id="IMG_4" class="left-col-image" src="imgs/chat-imgs/IMG_4.png" alt="img example from bot">
+                        </div>
+                    </div>
+                    <div class="right-col" id="right-col" >
+                        <div class="img-wraper">
+                            <img  class="right-col-image" src="imgs/chat-imgs/IMG_1.png" alt="img example from bot">
+                        </div>
+                        <div class="img-wraper">
+                             <img  class="right-col-image" src="imgs/chat-imgs/IMG_2.png" alt="img example from bot">
+                        </div>
 
-
-            
-
-                <div id ="second-part">
-                    <img id="IMG_1" src="imgs\chat-img\IMG_1.png">
-                    <img id="IMG_2" src="imgs\chat-img\IMG_2.png">
-                    <img id="IMG_3" src="imgs\chat-img\IMG_3.png">
-                    <img id="IMG_4" src="imgs\chat-img\IMG_4.png"> 
+                    </div>
                 </div>
-
-
             </div>
-        </div> <!-- end of first-section-wrap    -->
-        
+        </div>
 
         <div id="our-story-section-wrap" class="wrap">
             <div id="our-story-section"  class="section">
-                <p class="text">We are from Palestine, in 2023 we had an opportunity by chance to get an internship 
-                    in the same working environment, we observed the same shared problem we faced together in struggling 
+                <p class="text">We are from Palestine, in 2023 we had an opportunity by chance to get an internship
+                    in the same working environment, we observed the same shared problem we faced together in struggling
                     to find an internship opportunity, and we thought to assist students in their career journey by leveraging technology,
-                     we hope to bridge the gap between students and suitable internships. Our goal is to equip students with the right sources 
+                     we hope to bridge the gap between students and suitable internships. Our goal is to equip students with the right sources
                      to secure these opportunities.
                 </p>
             </div>
-        </div> <!-- end of our-story-section-wrap-->
+        </div>
+
         <div id="our-team-section-wrap"  class="wrap">
             <div id ="our-team-section" class="section">
                 <i id="left" class="fa-solid fa-angle-left"></i>
                 <ul id="carousel1" class="carousel">
                     <div class="team-name">
                         Technical Mentor
-                    </div> 
+                    </div>
                     <li class="card">
-                        <div id="one-member">
-                            <div class="img"><img src="imgs\team-img\Zaina.jpg" alt="Team member profile picture" draggable="false"></div>
+                        <div class="one-member">
+                            <div class="img"><img src="imgs/team-imgs/Zaina.jpg" alt="Zaine-Team member profile picture" draggable="false"></div>
                             <h2>Zaina Saadeddin <a href="https://www.linkedin.com/in/zainasaadeddin/" target="_blank">
-                                <img alt="linkedin-logo" src="imgs/icons/linkedin.png" id="img2-1">
+                                <img alt="linkedin-logo" src="imgs/icons/linkedin.png" class="linkedin">
                             </a></h2>
                             <span></span>
                         </div>
@@ -114,30 +131,30 @@
                 <ul id="carousel2" class="carousel" style="display: none;">
                     <div class="team-name">
                         Frontend Engineers
-                    </div>                
+                    </div>
                     <li class="card">
-                        <div id="member1">
-                            <div class="img"><img src="imgs\team-img\Tasnim.jpg" alt="Team member profile picture" draggable="false"></div>
+                        <div class="member1">
+                            <div class="img"><img src="imgs/team-imgs/Tasnim.jpg" alt="Tasnim-Team member profile picture" draggable="false"></div>
                             <div>
                                 <h2>
-                                    Tasnim Mohammd  
+                                    Tasnim Mohammd
                                     <a href="https://www.linkedin.com/in/tasnim-mohammd/" target="_blank">
-                                    <img alt="linkedin-logo" src="imgs/icons/linkedin.png" id="img2-1">
+                                    <img alt="linkedin-logo" src="imgs/icons/linkedin.png" class="linkedin">
                                     </a>
                                 </h2>
-                            </div>                                
+                            </div>
                             <span></span>
                         </div>
-                        <div id="member2">
-                            <div class="img"><img src="imgs\team-img\AbdAlsalam.jpg" alt="Team member profile picture" draggable="false"></div>
+                        <div class="member2">
+                            <div class="img"><img src="imgs/team-imgs/AbdAlsalam.jpg" alt="AbdAlsalam-Team member profile picture" draggable="false"></div>
                             <div>
                                 <h2>
                                     AbdAlsalam Jodalah
                                     <a href="https://www.linkedin.com/in/abdalsalam-jodalah/" target="_blank">
-                                    <img alt="linkedin-logo" src="imgs/icons/linkedin.png" id="img2-1" style="color: #282961;">
-                                    </a> 
-                                </h2>    
-                            </div> 
+                                    <img alt="linkedin-logo" src="imgs/icons/linkedin.png" class="linkedin" style="color: #282961;">
+                                    </a>
+                                </h2>
+                            </div>
                             <span></span>
                         </div>
 
@@ -146,12 +163,12 @@
                 <ul id="carousel3" class="carousel" style="display: none;">
                     <div class="team-name">
                         DevOps Engineer
-                    </div> 
+                    </div>
                     <li class="card">
-                        <div id="one-member">
-                            <div class="img"><img src="imgs\team-img\Sohaib.jpg" alt="Team member profile picture" draggable="false"></div>
+                        <div class="one-member">
+                            <div class="img"><img src="imgs/team-imgs/Sohaib.jpg" alt="Sohaib-Team member profile picture" draggable="false"></div>
                             <h2>Sohaib Arafat<a href="https://www.linkedin.com/in/sohaib-arafat/" target="_blank">
-                                <img alt="linkedin-logo" src="imgs/icons/linkedin.png" id="img2-1">
+                                <img alt="linkedin-logo" src="imgs/icons/linkedin.png" class="linkedin">
                             </a></h2>
                             <span></span>
                         </div>
@@ -160,52 +177,76 @@
                 <ul id="carousel4" class="carousel" style="display: none;">
                     <div class="team-name">
                         AI Engineers
-                    </div>                
+                    </div>
                     <li class="card">
-                        <div id="member1">
-                            <div class="img"><img src="imgs\team-img\Rama.jpg" alt="Team member profile picture" draggable="false"></div>
+                        <div class="member1">
+                            <div class="img"><img src="imgs/team-imgs/Rama.jpg" alt="Rama-Team member profile picture" draggable="false"></div>
                         <div>
                             <h2>Rama Hasiba<a href="https://www.linkedin.com/in/ramahasiba/" target="_blank">
-                                <img alt="linkedin-logo" src="imgs/icons/linkedin.png" id="img2-1">
+                                <img alt="linkedin-logo" src="imgs/icons/linkedin.png" class="linkedin">
                             </a> </h2>
-                        </div>                                
+                        </div>
                             <span></span>
                         </div>
-                        <div id="member2">
-                            <div class="img"><img src="imgs\team-img\Eleen.jpg" alt="Team member profile picture" draggable="false"></div>
+                        <div class="member2">
+                            <div class="img"><img src="imgs/team-imgs/Eleen.jpg" alt="Eleen-Team member profile picture" draggable="false"></div>
                         <div>
                             <h2>Eleen Kmail
                             <a href="https://www.linkedin.com/in/eleenkmail/" target="_blank">
-                                <img alt="linkedin-logo" src="imgs/icons/linkedin.png" id="img2-1" style="color: #282961;">
-                            </a></h2>    
-                        </div> 
+                                <img alt="linkedin-logo" src="imgs/icons/linkedin.png" class="linkedin" style="color: #282961;">
+                            </a></h2>
+                        </div>
+                            <span></span>
+                        </div>
+                    </li>
+                </ul>
+                <ul id="carousel5" class="carousel" style="display: none;">
+                    <div class="team-name">
+                        Social Media
+                    </div>
+                    <li class="card">
+                        <div class="one-member">
+                            <div class="img"><img src="imgs/team-imgs/walaa.jpeg" alt="walaa-Team member profile picture" draggable="false"></div>
+                            <h2>Walaa Faqeh
+                                <a href="https://www.linkedin.com/in/walaafaqeh/" target="_blank">
+                                <img alt="linkedin-logo" src="imgs/icons/linkedin.png" class="linkedin">
+                            </a></h2>
                             <span></span>
                         </div>
                     </li>
                 </ul>
                 <i id="right" class="fa-solid fa-angle-right"></i>
             </div>
-        </div> <!-- end of our-team-section-wrap -->
-    </div> <!--  end of container -->
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        </div>
+    </div>
 
     <footer id= "footer" >
-        <h1 id="tit"style="font-weight: bold;"><span style="color:black;"> 
-           Oppor</span>train
-        </h1>
-        <div>
-            <!-- <img alt="facebook-logo" src="imgs/icons/facebook.png" id="img2-1">
-            <img alt="instagram-logo" src="imgs/icons/instagram-logo.png" id="img2-1">
-            <img alt="linkedin-logo" src="imgs/icons/linkedin.png" id="img2-1">
-            <img alt="whatsapp-logo" src="imgs/icons/whatsapp.png" id="img2-1"> -->
+        <div id="logo-fotter">
+            <a href="#first-section-wrap" >
+                <img src="imgs/logo/logo-removebg.png" alt="LOGO" >
+            </a>
+        </div>
+        <div id="icons-bar">
+            <!--
+            <img alt="instagram-logo" src="imgs/icons/instagram-logo.png" id="icons">
+            <img alt="linkedin-logo" src="imgs/icons/linkedin.png" id="icons">
+            <img alt="whatsapp-logo" src="imgs/icons/whatsapp.png" id="icons">
+            -->
+            <a href="https://www.instagram.com/opportrain/?igsh=MWl3dDl6MGdiMTNubw%3D%3D" target="_blank">
+                <img alt="facebook-logo" src="imgs/icons/instagram-logo.png"  class="icons">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61555638848848" target="_blank">
+                <img alt="facebook-logo" src="imgs/icons/facebook.png"  class="icons">
+            </a>
             <a href="https://github.com/opportrain" target="_blank">
-                <img alt="GitHup-logo" src="imgs\icons\GitHup.png" id="img2-1">
+                <img alt="GitHup-logo" src="imgs/icons/GitHup.png"  class="icons">
             </a>
         </div>
         <div >
-          <p id="pf"> ©2023 Opportrain Inc </p>
-        </div> 
+            <a id="privacy-policy" href="https://github.com/opportrain/privacy-policy?tab=readme-ov-file#terms-and-privacy-policy" target="_blank">
+                <p id="copyright" > ©2024 Opportrain Inc </p>
+            </a>
+        </div>
     </footer>
 </body>
 </html>
