@@ -50,18 +50,25 @@ document.addEventListener('DOMContentLoaded', function() {
     setInterval(scrollImages, 20);
 });
 const links = document.querySelectorAll("#links a");
-const sections = document.querySelectorAll(".section");
+const sectionWraps = document.querySelectorAll(".wrap");
 
 // update the active link
 function updateActiveLink() {
-    sections.forEach((section, index) => {
-        const rect = section.getBoundingClientRect();
+    sectionWraps.forEach((wrap, index) => {
+        console.log("Updating active link");
+        if (indexFound) return;
+        const rect = wrap.getBoundingClientRect();
+        console.log(index, rect.top, rect.bottom);
         if (rect.top <= 50 && rect.bottom >= 50) {
+            console.log("Active section before:", index);
             links.forEach((link) => link.classList.remove("active"));
             links[index].classList.add("active");
+            console.log("Active section after:", index);
         }
     });
+
 }
+
 
 //  handle link clicks
 function handleLinkClick(event) {

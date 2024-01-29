@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Opportrain</title>
     <!-- enternal links: -->
-    <link rel="shortcut icon" type="image/x-icon" href="imgs/logo.png"/>
+    <link rel="shortcut icon" type="image/x-icon" href="imgs/logo/logo.png"/>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/footer.css">
@@ -28,7 +28,7 @@
         <div id="content">
             <div id="logo"> 
                 <a   href="#first-section-wrap" >
-                    <img src="imgs/logo.png" alt="LOGO" >
+                    <img src="imgs/logo/logo.png" alt="LOGO" >
                 </a>
             </div>
             <div id="burger-icon" class="closed">
@@ -41,13 +41,12 @@
                 <a href="#our-story-section-wrap"  data-target="our-team">Our Story</a>
                 <a href="#our-team-section-wrap">Our Team</a>
             </div>
-
             <button id="join-btn" class="btn" onclick="window.open('https://t.me/Opportrain_Bot', '_blank');">Join Our Bot</button>
         </div>
     </div>
-    <div id="conatiner">
 
-        <div id="first-section-wrap"     class="wrap">
+    <div id="conatiner">
+        <div id="first-section-wrap" class="wrap">
             <div id="first-section" class="section">
                 <div id="first-part" >
                     <h1 id="title" class="title">Your Path to Find the right Internship
@@ -61,10 +60,11 @@
                     <button id="btn2" class="btn" onclick="window.location.href='https://t.me/Opportrain_Bot';"> Join Our Bot</button>
                 </div>
                 <div class="second-part">
-                    <img alt="QR-code" id="Qr" src="imgs/OpportrainQR.svg" >
+                    <img alt="QR-code" id="Qr" src="imgs/OpportrainQR.svg" onclick="window.open('https://t.me/Opportrain_Bot', '_blank');" >
                 </div>
             </div>
         </div>
+
         <div id="our-App-section-wrap" class="wrap">
             <div id= "img-section" class="section">
                 <div class="left-side">
@@ -79,18 +79,18 @@
                 <div class ="right-side">
                     <div class="left-col">
                         <div class="img-wraper">
-                            <img id="IMG_3" src="imgs\chat-img\IMG_3.png" alt="img example from bot">
+                            <img id="IMG_3" class="left-col-image" src="imgs/chat-imgs/IMG_3.png" alt="img example from bot">
                         </div>
                         <div class="img-wraper">
-                            <img id="IMG_4" src="imgs\chat-img\IMG_4.png" alt="img example from bot">
+                            <img id="IMG_4" class="left-col-image" src="imgs/chat-imgs/IMG_4.png" alt="img example from bot">
                         </div>
                     </div>
                     <div class="right-col" id="right-col" >
                         <div class="img-wraper">
-                            <img id="IMG_1" src="imgs\chat-img\IMG_1.png" alt="img example from bot">
+                            <img  class="right-col-image" src="imgs/chat-imgs/IMG_1.png" alt="img example from bot">
                         </div>
                         <div class="img-wraper">
-                             <img id="IMG_2" src="imgs\chat-img\IMG_2.png" alt="img example from bot">
+                             <img  class="right-col-image" src="imgs/chat-imgs/IMG_2.png" alt="img example from bot">
                         </div>
 
                     </div>
@@ -108,6 +108,7 @@
                 </p>
             </div>
         </div>
+
         <div id="our-team-section-wrap"  class="wrap">
             <div id ="our-team-section" class="section">
                 <i id="left" class="fa-solid fa-angle-left"></i>
@@ -117,9 +118,9 @@
                     </div> 
                     <li class="card">
                         <div class="one-member">
-                            <div class="img"><img src="imgs\team-img\Zaina.jpg" alt="Zaine-Team member profile picture" draggable="false"></div>
+                            <div class="img"><img src="imgs/team-imgs/Zaina.jpg" alt="Zaine-Team member profile picture" draggable="false"></div>
                             <h2>Zaina Saadeddin <a href="https://www.linkedin.com/in/zainasaadeddin/" target="_blank">
-                                <img alt="linkedin-logo" src="imgs/icons/linkedin.png" class="img2-1">
+                                <img alt="linkedin-logo" src="imgs/icons/linkedin.png" class="linkedin">
                             </a></h2>
                             <span></span>
                         </div>
@@ -131,24 +132,24 @@
                     </div>                
                     <li class="card">
                         <div class="member1">
-                            <div class="img"><img src="imgs\team-img\Tasnim.jpg" alt="Tasnim-Team member profile picture" draggable="false"></div>
+                            <div class="img"><img src="imgs/team-imgs/Tasnim.jpg" alt="Tasnim-Team member profile picture" draggable="false"></div>
                             <div>
                                 <h2>
                                     Tasnim Mohammd  
                                     <a href="https://www.linkedin.com/in/tasnim-mohammd/" target="_blank">
-                                    <img alt="linkedin-logo" src="imgs/icons/linkedin.png" class="img2-1">
+                                    <img alt="linkedin-logo" src="imgs/icons/linkedin.png" class="linkedin">
                                     </a>
                                 </h2>
                             </div>                                
                             <span></span>
                         </div>
                         <div class="member2">
-                            <div class="img"><img src="imgs\team-img\AbdAlsalam.jpg" alt="AbdAlsalam-Team member profile picture" draggable="false"></div>
+                            <div class="img"><img src="imgs/team-imgs/AbdAlsalam.jpg" alt="AbdAlsalam-Team member profile picture" draggable="false"></div>
                             <div>
                                 <h2>
                                     AbdAlsalam Jodalah
                                     <a href="https://www.linkedin.com/in/abdalsalam-jodalah/" target="_blank">
-                                    <img alt="linkedin-logo" src="imgs/icons/linkedin.png" class="img2-1" style="color: #282961;">
+                                    <img alt="linkedin-logo" src="imgs/icons/linkedin.png" class="linkedin" style="color: #282961;">
                                     </a> 
                                 </h2>    
                             </div> 
@@ -163,9 +164,9 @@
                     </div> 
                     <li class="card">
                         <div class="one-member">
-                            <div class="img"><img src="imgs\team-img\Sohaib.jpg" alt="Sohaib-Team member profile picture" draggable="false"></div>
+                            <div class="img"><img src="imgs/team-imgs/Sohaib.jpg" alt="Sohaib-Team member profile picture" draggable="false"></div>
                             <h2>Sohaib Arafat<a href="https://www.linkedin.com/in/sohaib-arafat/" target="_blank">
-                                <img alt="linkedin-logo" src="imgs/icons/linkedin.png" class="img2-1">
+                                <img alt="linkedin-logo" src="imgs/icons/linkedin.png" class="linkedin">
                             </a></h2>
                             <span></span>
                         </div>
@@ -177,52 +178,70 @@
                     </div>                
                     <li class="card">
                         <div class="member1">
-                            <div class="img"><img src="imgs\team-img\Rama.jpg" alt="Rama-Team member profile picture" draggable="false"></div>
+                            <div class="img"><img src="imgs/team-imgs/Rama.jpg" alt="Rama-Team member profile picture" draggable="false"></div>
                         <div>
                             <h2>Rama Hasiba<a href="https://www.linkedin.com/in/ramahasiba/" target="_blank">
-                                <img alt="linkedin-logo" src="imgs/icons/linkedin.png" class="img2-1">
+                                <img alt="linkedin-logo" src="imgs/icons/linkedin.png" class="linkedin">
                             </a> </h2>
                         </div>                                
                             <span></span>
                         </div>
                         <div class="member2">
-                            <div class="img"><img src="imgs\team-img\Eleen.jpg" alt="Eleen-Team member profile picture" draggable="false"></div>
+                            <div class="img"><img src="imgs/team-imgs/Eleen.jpg" alt="Eleen-Team member profile picture" draggable="false"></div>
                         <div>
                             <h2>Eleen Kmail
                             <a href="https://www.linkedin.com/in/eleenkmail/" target="_blank">
-                                <img alt="linkedin-logo" src="imgs/icons/linkedin.png" class="img2-1" style="color: #282961;">
+                                <img alt="linkedin-logo" src="imgs/icons/linkedin.png" class="linkedin" style="color: #282961;">
                             </a></h2>    
                         </div> 
                             <span></span>
                         </div>
                     </li>
                 </ul>
+                <ul id="carousel5" class="carousel" style="display: none;">
+                    <div class="team-name">
+                        Social Media
+                    </div>
+                    <li class="card">
+                        <div class="one-member">
+                            <div class="img"><img src="imgs/team-imgs/walaa.jpeg" alt="walaa-Team member profile picture" draggable="false"></div>
+                            <h2>Walaa Faqeh
+                                <a href="https://www.linkedin.com/in/walaafaqeh/" target="_blank">
+                                <img alt="linkedin-logo" src="imgs/icons/linkedin.png" class="linkedin">
+                            </a></h2>
+                            <span></span>
+                        </div>
+                    </li>
+                </ul>
                 <i id="right" class="fa-solid fa-angle-right"></i>
             </div>
-        </div> <!-- end of our-team-section-wrap -->
-    </div> <!--  end of container -->
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        </div>
+    </div>
 
     <footer id= "footer" >
-        <h1 id="tit"style="font-weight: bold;"><span style="color:black;"> 
-           Oppor</span>train
-        </h1>
-        <div>
+        <div id="logo-fotter">
+            <a href="#first-section-wrap" >
+                <img src="imgs/logo/logo-removebg.png" alt="LOGO" >
+            </a>
+        </div>
+        <div id="icons-bar">
             <!--
-            <img alt="facebook-logo" src="imgs/icons/facebook.png" id="img2-1">
-            <img alt="instagram-logo" src="imgs/icons/instagram-logo.png" id="img2-1">
-            <img alt="linkedin-logo" src="imgs/icons/linkedin.png" id="img2-1">
-            <img alt="whatsapp-logo" src="imgs/icons/whatsapp.png" id="img2-1">
+            <img alt="instagram-logo" src="imgs/icons/instagram-logo.png" id="icons">
+            <img alt="linkedin-logo" src="imgs/icons/linkedin.png" id="icons">
+            <img alt="whatsapp-logo" src="imgs/icons/whatsapp.png" id="icons">
             -->
+            <a href="https://www.facebook.com/profile.php?id=61555638848848" target="_blank">
+                <img alt="facebook-logo" src="imgs/icons/facebook.png"  class="icons">
+            </a>
             <a href="https://github.com/opportrain" target="_blank">
-                <img alt="GitHup-logo" src="imgs\icons\GitHup.png" class="img2-1">
+                <img alt="GitHup-logo" src="imgs/icons/GitHup.png"  class="icons">
             </a>
         </div>
         <div >
-
-          <p id="pf"> ©2024 Opportrain Inc </p>
-        </div> 
+            <a id="privacy-policy" href="https://github.com/opportrain/privacy-policy?tab=readme-ov-file#terms-and-privacy-policy">
+                <p id="copyright" > ©2024 Opportrain Inc </p>
+            </a>
+        </div>
     </footer>
 </body>
 </html>

@@ -21,23 +21,25 @@
 
 
 #logo {
-    width: 70px;
+    width: 150px;
     height: 70px;
     border-radius: 50%;
     margin: 5% 0;
     overflow: hidden;
 }
 #logo img {
-    width : 100%;
-    height: 100%;
+    position: relative;
+    top: -38px;
+    width: 150px;
+    height: 150px;
 }
 
 
 #links {
-    width: 40%;
+    width: 60%;
     height: 90%;
     margin: 5% 0;
-
+    /* margin-left: 100px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -50,7 +52,7 @@
     padding: 10px;
     font-size: x-large;
     text-decoration: none;
-    position: relative; /* Needed for absolute positioning of pseudo-elements */
+    position: relative;
     overflow: hidden;
     transition: background-color 0.3s, color 0.3s, border 0.3s;
 }
@@ -58,56 +60,6 @@
     background-color: #f2e8dc;
     border: 1px solid #ffffffdc;
 }
-
-
-#join-btn{
-    height: 66%;
-    width : 20%;
-    margin: 20% 0;
-}
-
-/*#links a {*/
-/*    text-decoration: none;*/
-/*    position: relative;*/
-/*    transition: background-color 0.3s, color 0.3s, border 0.3s;*/
-/*}*/
-
-/*#links a.active,*/
-/*#links a.clicked {*/
-/*    text-decoration: underline;*/
-/*    text-decoration-color: #425980;*/
-
-
-/*}*/
-
-/*#links a:hover {*/
-/*    background-color: #f2e8dc;*/
-/*    border: 1px solid #ffffffdc;*/
-/*}*/
-/*#links a::after {*/
-/*    content: "";*/
-/*    display: block;*/
-/*    height: 2px; !* Adjust the height of the underline as needed *!*/
-/*    width: 100%;*/
-/*    background-color: #425980;*/
-/*    position: absolute;*/
-/*    bottom: -15px !important; !* Adjust the distance between text and underline here (15 pixels in this example) *!*/
-/*    left: 0;*/
-/*    opacity: 0; !* Initially hide the underline *!*/
-/*    transition: opacity 0.3s;*/
-/*}*/
-
-/*#links a.active::after,*/
-/*#links a.clicked::after {*/
-/*    opacity: 1; !* Show the underline for active and clicked states *!*/
-/*}*/
-#links a {
-    /* other styles above */
-    position: relative;
-    text-decoration: none;
-    overflow: hidden;
-}
-
 #links a::after {
     content: '';
     display: block;
@@ -121,59 +73,15 @@
     transition: transform 0.3s ease, background-color 0.3s ease;
     will-change: transform;
 }
-
 #links a:hover::after, #links a.active::after {
     transform: translateY(0);
 }
-
 #links a.active {
 
 }
 
-
-
-/* Optional: Styling for hover effect */
-/*#links a:hover {*/
-
-/*    box-shadow: 0px 10px 0px -8px #425980;; !* Change underline color on hover *!*/
-/*}*/
-
-/*#links a.active-link {*/
-/*    text-decoration: underline;*/
-/*    text-decoration-color: #425980; !* Adjust the color as needed *!*/
-/*}*/
-
-/*#links a::after {*/
-/*    content: '';*/
-/*    position: absolute;*/
-/*    left: 50%;*/
-/*    bottom: -10px;*/
-/*    width: 0;*/
-/*    height: 2px;*/
-/*    background-color: #425980;*/
-/*    transition: width 0.3s ease, left 0.3s ease;*/
-/*    margin: auto;*/
-/*}*/
-
-/*#links a.active-link::after {*/
-/*    width: 100%;*/
-/*    left: 0; !* Aligns the start of the underline to the left *!*/
-/*}*/
-
-
-/*#links a::before {*/
-/*    content: '';*/
-/*    position: absolute;*/
-/*    left: 0;*/
-/*    right: 0;*/
-/*    bottom: 0;*/
-/*    height: 0;*/
-/*    background-color: #425980; !* Color of the fill *!*/
-/*    z-index: -1;*/
-/*    transition: height 0.3s ease-out;*/
-/*}*/
-
-/*!* Class to trigger the animation *!*/
-/*#links a.fill-up::before {*/
-/*    height: 100%;*/
-/*}*/
+#join-btn{
+    height: 66%;
+    width : 20%;
+    margin: 20% 0;
+}
