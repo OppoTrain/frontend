@@ -408,7 +408,7 @@
         left: 90px;
     }
     #img-section {
-        height: 700px;
+        height: 900px!important;
     }
 }
 @media (max-width: 550px) {

@@ -93,5 +93,6 @@
 }
 .menu-wrapper.open{
     display: unset;
-    background-color: rgba(140, 131, 131, 0.16);
+    background-color: rgba(145, 145, 145, 0.24);
+    z-index: 1110;
 }
