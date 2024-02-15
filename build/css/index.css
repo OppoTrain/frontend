@@ -71,7 +71,7 @@ body {
 }
 #first-part{
   width: 45%;
-  height: 100%;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
